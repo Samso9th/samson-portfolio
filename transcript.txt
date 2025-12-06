@@ -1,0 +1,1773 @@
+Stop building boring portfolios. No, seriously. If your portfolio still
+starts with, "Hi, I'm blank." And there's an image on the right. We need
+to talk because the world really doesn't need another polite portfolio. Quietly
+whispering, "Here are my projects. Please consider me." That version of you
+is invisible. Recruiters scroll. They forget. They move on to the next
+developer who copypasted a template and vibecoded a personalityfree website.
+Zero creativity, zero identity, zero impact. But that's not you. Not today.
+Hi there. I'm Adrian and welcome to the portfolio of the 21st century. A
+portfolio so bold, so interactive, so unignorable that the first time someone
+sees it, they'll swear their laptop just booted a brand new operating system.
+Hold up. Wait a minute. Wait, what? Yes, your new portfolio is a
+Mac OS inspired desktop environment. A portfolio that doesn't look like a
+website. It behaves like an actual OS. And here's what you're about to build. A
+fully interactive Mac OS-like desktop. Smooth animated welcome experience. A
+magnifying dock with real physics. A full finder clone. A Safari window for
+your blog. A photos app. A contact app. A terminal for displaying your text
+stack. A resume viewer with a download button. True-to-life dragable windows
+and GSAP powered animations that feel premium and alive. Let that sink in. A
+desktop, apps, animations. You're building an entire operating system that
+doubles as your portfolio. And this isn't just about being flashy. It's about becoming the kind of developer who
+actually stands out. Because while building this, you'll learn React fundamentals and advanced patterns.
+Tailwind CSS, Zastand, Immer, Gap, higher order components and clean UI
+engineering principles that separate juniors from seniors. By the end, you
+won't just have a portfolio, you'll have a signature piece, a career weapon, if
+you will. And if you want to go even further and master advanced GAP patterns
+and real product level motion, the ultimate web animation course goes deep into everything I use here. Or if you
+want to skip the setup and jump straight into building, I prepared a complete starter kit for you. Not a templated
+clone, a real extendable foundation that goes beyond just what this course
+teaches. It includes a dark mode, a mobile interface, modular components,
+app systems, and a professional readme. And if you want to go beyond just looking good and actually get
+interviews, I've prepared a hiring ready resume, case study templates, and
+step-by-step guides to make your LinkedIn and GitHub stand out. It's how you'll present yourself like a real
+candidate in a crowded market. Grab it from the description below. It'll save you weeks and give you a system you can
+grow with. All right, you know the features. You know the skills and the
+tools. You know exactly what you're about to build. So whether you're following along from scratch or you use
+the starter kit, what matters is you walk away with something that feels yours, something unforgettable,
+something that finally shows the world what you're capable of. Let's build your new portfolio.
+And since my goal is to make sure you land a job, this portfolio is not just a regular project. It's a career asset
+designed to showcase everything you're capable of, making you an attractive candidate for any job. See, hosting your
+website on a personalized domain makes you more professional and improves your credibility. It also highlights your
+skill in self-hosting, scaling, and managing websites. So, before we dive
+into the code, we need to set the foundation. I highly recommend Hostinger for hosting this app, and they're
+offering an amazing deal right now because there's a huge Black Friday sale going on. So, click the Hostinger link
+in the description and then click start now. When it comes to hosting this app, I'll personally go with the premium
+plan. It allows you to host three websites with the same account. It comes with 20 gigs of SSD storage. You get a
+free domain for one year and free SSL for HTTPS security, which builds trust
+with anybody visiting your site. This deal won't last forever. And because I partnered with Hostinger, you'll get an
+even bigger discount. So, click the link in the description, start now, and choose a plan. Here, we have to choose
+the period of our hosting. And with the amazing deal going on right now, I'll choose 48 months to save the most. If
+you already know the domain name you want to get with a hosting, you can type it out right here or you can do that later. And most importantly, here's that
+additional coupon code that I promised. Just type in JavaScript mastery and you'll get an even bigger discount on
+your hosting package. You can now continue and very soon we'll start developing our app. And as soon as you
+buy it, you'll be redirected to Hostinger's guided setup. In this case, we are creating a new
+website. We're not using any kind of a builder. Rather, we want to start with an empty HTML website. And if you bought
+12 months or more, you've also gotten a free domain name. So, in this case, choose what would suit you. I'll go with
+something like my Mac OS portfolio.com. I'll leave better domain names for you.
+And then click next. Or if you don't yet know which domain name you want to choose, you can use a temporary domain
+name for now, but I recommend just putting a combination of your last and first name. And that's it. Our domain is
+getting registered. It'll ask you where your target audience is located. You can choose anything here. I'll go with
+United States. And while our hosting is being set up, I just wanted to quickly let you know that that if you want to
+skip all the trial and error while trying to build out this portfolio, you can get the full source code below. Just
+fix up your details and then still follow along with the video, but this time trying to better understand how the
+codebase really works. Now that our hosting has been set up, at the end of the video, we'll simply deploy our code
+using the file manager. And before we dive right into the code, one quick thing. Since my goal is to help you not
+just build projects, but actually grow your developer career, I want to remind
+you why I built JSM Pro in the first place. It's designed to help smart and
+ambitious developers like you stay consistent with your learning, get real
+world results, and finally feel confident applying for jobs. And if you've been thinking about joining, now
+is the best time as our Black Friday sale goes live on the 25th. Every
+course, bundle, and membership will be 25% off, and that stacks on top of the
+already huge PPP discount. But heads up, the deal only lasts until December 2nd.
+So mark your calendar. All right, now let's really dive into the code.
+Ready to make your portfolio? Let's get started. First, open up your code editor
+or IDE and create a new folder called Mac OS Portfolio. Throughout the course,
+you'll see me use WebStorm. It is a professional IDE that as of recently became completely free for
+non-commercial use. I'll put the link down in the description so you can download it. And since I know you'll be
+asking which theme I'm using, it's Catpuchin Mocha. Now, WebStorm also comes paired with Juni, a smart coding
+agent. Throughout this course, we'll use it a couple of times to help us develop some pieces of the UI. It is super
+useful and saves a lot of time. You can immediately get it by pressing command shiftp, heading over to plugins, and
+then searching for juni. So now that we've prepared our coding environment, we are ready to get
+started. I'll open up the integrated terminal. You can do that by pressing control and then the key left of the one
+key on your keyboard. And within it, you can type the command of mpmc create vt
+at latest and then add the dot slash which means that it'll create it within the current repository and then press
+enter. It'll ask you whether you want to install create vit installer, you can
+say y for yes. And then if it says your current directory is not empty, you can just say empty it and let's continue.
+Now it'll ask you a couple of questions on how we want to set up our vit environment. We'll be using React to
+build this project, but you're more than welcome to follow along with any framework that you like. In this case,
+I'll go with React. And just for simplicity sake, I'll use plain JavaScript, but once again, you're free
+to use TypeScript as well. Now, it asks us whether we want to use rolldown vit.
+I'll skip it for now because it's still experimental, but by the time you're watching this video, it could already be
+added by default. Finally, are we ready to install the packages and start? I'll say yes. It should take just a couple of
+seconds for everything to get installed and we'll be running on localhost 5173. So you can open it up within your
+browser and it should look something like this. Now as you can see I have no
+top bar or anything else cluttering the view and that's because I'm using Arc. It's a nice browser designed as a Chrome
+replacement and this is not sponsored but I really like using it. So now you know. Now, instead of seeing this empty
+boiler plate, what do you say that we clean up our project a bit to prepare it for our application? I'll head back over
+to my IDE and we can explore the codebase together. Starting from top to bottom, we have the Vit config, which is
+pretty much empty right now. Then there's the readme explaining what our project is all about. A package json,
+which goes over all of our dependencies, index html, which acts as the starting
+point of our application. Later on right here, we'll replace this base favicon
+image as well as the title to make it personalized to your portfolio. Then there's the ESLint config get ignore and
+what we care most about are the public and the source folders. Within the public folder, you'll have all of the
+images and assets that we'll use across our entire application. For now, I'll go
+ahead and remove it as later on we'll recreate it and add so many more assets. And then finally, there's the source
+folder which also contains some assets which we can remove from now. And we also have a couple of other files that
+we can go over together. The main file simply takes our entire application and adds it to this index html file. Then we
+have the index.css which we'll modify later on. There's the app.jsx which acts as the starting point
+of our application. So I want to remove everything from here as it currently has only this boiler plate. and instead I
+want to run rafce. This will spin up a simple React functional component that
+looks something like this. If this didn't work for you, you might need to head over to plugins and install modern
+React snippets. Then after you restart your IDE, it should work. Finally,
+there's the app.css which we'll remove from now as we'll do all of our styling within index as well as within our files
+directly as we'll be using Tailwind throughout this project. So, if within your app.jsx you render an H1
+that says something like welcome to my MacFolio and save it back in the
+browser, you should be able to see something that looks like this. It's not much, but we're getting there. And this
+is a great point to put my browser side by side with my editor so we can see what we're doing live. Now, as promised,
+we'll use Tailwind CSS. It's a utility first CSS framework packed with classes
+like flex padding top for text center and so on which makes it super easy to
+style your applications directly within your JSX with a simple syntax still allowing for complete customizability.
+To install it you can simply search for VIT and you can see how to get started using Vit. First, we create a new
+project which we've already done. And then the second step is to install Tailwind CSS and add Tailwind CSS vit.
+So I'll open up my terminal again. Actually I will keep the first one running with my application and I'll
+call it app. And then I'll rename the second one to terminal within which we can run additional commands. And I'll
+install Tailwind and add Tailwind CSS/V. Once that is done, the next step is to
+configure the Vit plugin within our Vit configuration. So if you head right here
+within the Vit config, right here next to React, you can just add Tailwind CSS
+coming from add Tailwind CSS vit. Then the next step is to import Tailwind CSS
+within our index.css file. You can do that by heading over to index.css, CSS
+removing everything we have over there and just say add import tailwind CSS.
+Finally, you can rerun your application and then start using Tailwind by adding
+classes like text-3 XL font bold and underline which I will add directly to
+my H1 within the app. So I'll say class, but it has to be class name because
+we're in React text-3 XL font bold and underline. And as you can see, we have a
+large heading that is bold and underlined, which means that we've successfully set up Tailwind. Now,
+alongside this build, I've also prepared a complete Figma design containing the
+full design of everything we'll build, showing you how different windows will look like, even giving you choice of
+different wallpapers that you can add as the background of our Mac OS portfolio. Now, obviously, this is a highly
+customized build, which will contain a lot of custom icons and fonts. So, to
+save you some time from clicking around Figma and trying to download each one of these icons individually, I've took the
+time to collect them all for you in a single easy to download zip. It is a part of the video kit that you can find
+in the description of this video. So, once you head over there, you can click on it and here you can click assets.
+Just go ahead and download it. Once it's there, simply unzip it and then drag and drop it to the root of your application.
+It should look something like this. You can see that there's a folder to upload your resume.
+There's also all of the icons which we'll be using, the images, a MacBook
+for the favicon, and that's it. Immediately, this will allow you to head back over to index.html.
+Replace this link from vit.svg to MacBook.png.
+This will change this favicon right here on the left. And then you can also modify the title to be your name and
+then portfolio. That way when you open up your sidebar, you'll see your portfolio. And alongside
+the assets right below, you'll also be able to find a complete index.css.
+So you can copy it and paste it right here. It'll seem like a lot, but basically what we're doing here is
+importing a font we'll be using, importing Tailwind CSS as before, making
+some modifications to the HTML in the body, setting up the theme, and then
+creating all the different utility classes that we'll be using throughout this project. For example, styling how
+the main will look like, the navbar, and so on. So, at any point in time, you'll be able to hit back to this index.css
+CSS to see exactly how we're styling things. So, if you head back to your portfolio right now, you should already
+be able to see something that looks like this. Seems like we're already half done. But that is definitely not the
+case. The only thing you're seeing here is a wallpaper. Now is the time that we take that and turn it into something
+more like this with a full navbar where you can open up and see info about your
+different projects including your blog posts or maybe a terminal that shows the text stack that you're good at a contact
+me section as well as the finder where you can browse through all of your works. All of that is coming soon. You
+can follow along and learn how to build it with me in this course. Or if you want to skip ahead and make this project
+your own faster, I've made the complete source code available below.
+You'll still be able to follow along and build everything for free. But if you want to save time or dive deeper, that's
+an option. My team and I spent more than a month designing and developing this
+portfolio to make it super unique. So, I wanted to give you an option to get it right away and make it your own. With
+that in mind, we can continue with the rest of the setup. And the one part of the setup is heading back to our Vcon
+config and adding support for absolute imports. You know, so you don't have to
+say dot dot slash do/components/ something rather we can just do
+something like add components slash component name. This is much better. And
+to make that happen within our codebase, you have to import resolve from path as
+well as their name and you also have to import file URL to path and this is
+coming from URL. Then right below our plugins, you can say resolve. We'll be
+resolving aliases for different files and folders. And you can make it an object where we
+can define either an at sign or a hash sign. And I'll first do it for the
+components where I'll resolve it to their name file URL to path. And then
+you need to import the URL and then define a comma and the name. In this case, it's going to be the components
+folder. You can now duplicate this a few times. I'll do it one, two, three, four
+more times. For the second one, we'll do it for constants.
+Make sure to change the name as well as the name right here. Then the third time
+we'll do it for the store. This is going to be the global data store of our application. Then we'll have it HOC for
+higher order components. Yep, that's coming up soon as well. And finally, we'll do it for different windows that
+are going to appear within our Mac OS system. And then to make it work, you can also add a new file called
+jsconfig.json. Within here, you can define an object
+with compiler options within which you're going to define a base URL of your application, which is going to be
+just the dot meaning current repository. And we are in a JSON file. So you have
+to use double quoted strings. Then we'll define the paths and set them as hash
+anything which will start from source anything like this. The paths of course
+will be inside of an object. So we can put this part right here within it. Finally we can go below compiler options
+and say include and we want to include the source directory. This was that most
+tedious part that we had to go through where now we have set up our file and folder structure as well as our styling
+to be able to accommodate and make it easier for us to implement the rest of this amazing Mac OS portfolio. So in the
+next lesson, let's start from top to bottom and implement the navbar.
+To get started developing our navbar, let's create a new folder within the source folder and call it components.
+Within components, create a new file and call it navbar.jsx.
+And within it, run rafce. Once you have it there, you can then
+import it within the app.jsx. The only thing you have to do is wrap
+everything in a main tag because this is the main part of our content. And then right here you can render navbar. You
+can see that right now we get an error saying that the file doesn't seem to exist. So most likely it's an issue with
+our v config where we're looking for it at components but actually it's coming
+from source components. So at the start of all of these paths right here at the
+end you also need to add source and then forward slash a specific file that'll
+look like this. components coming from source components, constants coming from source constants and so on. And that way
+it'll able to autoimp import the navbar. And you can see that we can see it right there. And then you can just
+commandclick into the navbar and we can start developing it. First things first, I'll make it an HTML
+5 semantic nav tag within which I'll have a div. Within that div, I will
+render an image with a source of forward slashim images.
+SVG. If you save that, you'll automatically see that we'll get this nice background and an apple logo at the
+top left. Now, if you're wondering how these styles got applied, well, the answer lies in the index.css.
+If you head over here, you'll see that automatically to the nav element, we're
+applying a property of flex justify between item center as well as this bg
+50. If I remove that, you'll see that it is gone. I'm also applying a bit of a
+background blur. So, we get this nice shadow at the bottom as well as a padding of two, padding horizontal of
+five. And that's it. So, at any point if you're wondering which styles are applied, you can just head over to the
+index.css and find the corresponding element. Now, an image also needs an al
+tag. So, I'll say logo and right below it, I'll render a p tag that will have a
+class name of font-bold and it'll say Adrian's portfolio. Or for
+you, it's not going to say Adrian's, it's going to say your name. Now, below this B tag, I'll also render a UL, an
+unordered list that'll need to render a collection of different links. That'll
+look something like this. It'll be an array where inside of it, we'll have one
+object for each link, and it'll contain an ID, something like one, and then the
+name, maybe like portfolio. Then we'll have a second one and a third one. So,
+it'll have ids of two and three. and names will be something like contact and
+projects. So now we have this array with these elements and we can also map over them.
+So I'll say map where we get each individual item and then for each item
+we want to automatically return an LI. Now when I say automatically return,
+what do I mean by that? Well, I mean that right here, we're not using a curly
+brace, but rather just a parenthesy because if you use a curly brace, that
+would mean that you're opening up a function block. And in that case, you would have to add an explicit return
+statement right here. But if you just make it a parenthesy, that means that it'll auto return whatever is within it.
+Then to this LI we can give a key equal to ID and then within the LI we'll
+render a P that'll simply render the name of the link. Of course that name is
+coming from the item. So we can dstructure both the ID and the name from the item by using this object
+dstructuring syntax putting it within the curly braces allowing you to just
+extract the properties within it. And now you can see that we get this portfolio, contact, and projects right
+here at the top. But there's one improvement that we can make here. I never like to have data right here
+within our presentation. JSX and components like the navbar are for
+presenting something to the user. But this right here is just raw data. So
+what I typically like to do is extract it. I'll first extract this array by
+copying it. And then I'll define it right here at the top by saying con data
+is equal to and then we can render it right here. So now the presentation part
+looks much better. You simply say data.m mapap and render what needs to be rendered. But there's an even better way
+to do it. Instead of keeping this data here, I will copy it
+and create a new folder within a source folder called constants.
+Within constants, you can create a new file called index.js. I'm using index because that's the
+starting point of every folder. Within it, you can simply paste what you copied
+this data. And I will rename it to nav links. And then you can simply say
+export const nav links or you can declare it right here and then export it
+at the bottom like this. That way we now have a special file called constants
+within which we can declare all of our data pieces. The only thing you have to do now to use it is just import it by
+saying nav links. You can see that webtorm will automatically recognize that it's coming from constants and take
+a look. That's it. We can still see them but the presentation is much more
+beautiful. Now talking about constants, they'll contain absolutely all the data
+that will be specific to you as this is your portfolio. So within the video kit
+down below, I'll provide a complete constants index.js file. So you can copy
+it right now and paste it right here. It'll seem like there's so much stuff happening right here, but trust me, not
+really. If we collapse some of these large pieces of data, you'll see that this is the place where you'll actually
+define your projects. Okay? So, here is your work and then within the work, you
+can define the name, the icon, the position, and most importantly, the
+additional description for each one of the projects that you develop. That means that this portfolio doesn't just
+work for me and my projects. You can just come in here and change the data very easily, just like changing a JSON
+object. If you scroll to the top, you'll see that the first thing that we have are the actual nav links.
+We also have the nav icons here, which are going to be useful for rendering those icons. So, let's head back. And
+we're still importing the same thing from the same file. And whenever the file is index.js, specifically for that
+file name, you don't even have to define it. The first thing that our program will look into when looking at the
+constants folder is going to be the index.js. Now, below this div containing the left portion of our navbar, we'll
+create another div that'll be all about the right side. Within it, we'll also
+have a ul. And within that ul, we will map over nav icons this time map where
+we're going to get each individual icon. And we can automatically return an LI
+for it. Each LI will have a key equal to icon ID. But instead of saying icon
+every time, we can dstructure the most important properties from the icon such as the ID and the image img. And now we
+can just say key is equal to ID. And within the LI, I'll render an image tag
+with a source of img, a class name equal to icon- hover, and I'll also give it an
+al tag equal to a template string of icon dash and then ID. That way, all AL
+tags are unique. And now you can see some icons appear at the top right. Now, we're not replicating a full Mac OS
+operating system, so these won't be functional. But if you want to get the final source code in there, I also
+included a light and dark mode switch. So you can either get it from there or maybe that's going to be a great
+challenge for the end of this course. Finally, I also want to display the current date and time as every operating
+system has that. For that, we'll use a dayjs library. So the only thing you
+have to do is head over to your terminal and run mpmi
+dayjs. Once you install it, you can simply import it at the top by saying import
+dayjs coming from days. I always like to
+space out my external imports at the top and then have my internal imports be
+right below them. And then right here at the bottom below this ul still on the
+right side div, I'll render a time component. Yep. If you didn't know,
+there is an HTML 5 component for time and within it, we can simply render
+day.js, call it as a function, and then format the date in the DDD mm D H MM A
+format. Sounds like a GTA cheat code, doesn't it? But here it is. You can see
+the full date and time. And believe it or not, that's it for our navbar. You
+can see how clean everything can be once you space out the additional data points in separate files. And that's it. We
+created it. And then within our app.jsx, we're using it. Great job with the
+navbar. In the next lesson, we'll focus on implementing this welcome part right here. It'll be a bit tricky as you can
+see that it has some cool animations as you hover over the letters right here. But don't worry because I'll show you
+exactly how we'll do that next. Implementing the welcome screen will be
+a bit of a bigger task than just developing a navbar. Here we have to install some new packages such as GSAP
+to provide all these animations and we have to make it all work. For that reason, I want to teach you how to
+develop software properly and that of course includes using source control. So, I think this might be a good time to
+push the current code onto GitHub and start creating branches for the upcoming features that we implement. Head over to
+github.com/new and create a new repo with the name of Mac OS Portfolio and then just click
+create repository at the bottom. Once that's done, you'll need to copy the steps right here. So, open up your
+terminal and run git in it to initialize a new empty git repository. Then get add
+dot to add all the current changes. Get commit-m first commit. Get branch- m
+main to change the base branch. Get remote add origin with your repo URL.
+And finally, get push u origin main which will push all the current code
+over to GitHub. Now, as soon as you reload, you'll be able to see the code you've created so far, as well as the
+readme. As part of the source code for the Mac OS portfolio, I'll also be including a modified readme so that your
+portfolio doesn't just look good when someone goes to it, but when somebody checks your repo, it also looks and
+feels good. So, now that we have the repo, we can create a new branch by running git checkout dashb for creating
+a new branch. and you can call it feat as in feature slwelcome
+and press enter. This will now automatically switch you to a new branch. So if you run git status, you'll
+see that you're on feed welcome with nothing to commit which means that we are ready to start implementing our
+welcome feature. To be honest, one of the primary reasons I decided to create a repo for this project, besides that,
+of course, it makes sense and it's a good practice to follow, is to be able to set up and test our code through code
+rabbit. Code rabbit will provide us with an AI powered code review that is actually good. Let's implement this
+feature and I'll show you how it works. First things first, let's start by creating a new component inside of the
+components folder and I'll call it welcome.jsx. jsx within it. I'll run
+rafce and then we can simply import it within our app.jsx
+right here below the navbar. I'll just start typing welcome and it'll autoimp import it for me. Now notice how as we
+get more components the list of imports will also grow so that at the end we'll have something that looks like this. So
+many imports. Instead of that there is one trick that I want to show you. If
+you go to the components and create a new index.js file within that index, you
+can import all the components you're creating such as the navbar and the new welcome that we created. So
+we can import the welcome component. And then at the bottom you can export all of them as
+we're exporting the constants. So I'll say export navbar as well as welcome. If
+you do that and then head back over to your app, you can now remove these two imports and do it in a single line by
+saying import within curly braces navbar as well as welcome. And these will be
+coming from hash components. That's it. So every new component you create, you
+can just render the component name right here, such as comp one, and you can add it to your code within a single line. No
+need to have multiple lines for each new import. Just make sure to export it from this index before. With that said, let's
+now head into the welcome and start implementing it. This is the moment in time where we'll need some help.
+Implementing animation like this one is not easy, especially not on hover and
+making it interact with different letters. And that's exactly what Gap is made for. See, GSAP allows you to
+animate anything. It's a JavaScript animation library built for professionals, allowing you to do
+basically whatever you want to. The possibilities are endless. I liked it so much that one of the courses on
+jsmastery.com is only about Gap. It's not about building random animations,
+but rather the ones that actually get you paid. In the course, I teach something called emotional design, where
+I go beyond just code and teach you how animation can build trust like Stripe.
+It can scare people into completing streaks like Dolingo or make people want to buy your products like they want
+apples. And as part of the course, you'll rebuild GTA 6's landing page,
+that masterpiece of a website. And also, gsmastery.com is built in a way that
+allows you to see exactly which code applies what kind of an animation. But
+okay, that's enough about GSAP and the course. If you want to dive deeper, you can check it out. But in this course,
+I'll teach you how to implement this beautiful hero section. So, first things first, we have to install GSA by running
+mpm install gap as well as at gsap/react.
+We'll also use some additional icons. So, you can run mpm add lucid-
+react. Now, we can start right here within the welcome component. I'll create two react references refs. One is
+going to be called a title ref and we'll use the use ref hook and set it to null
+at the start and the other one will be called subtitle ref and I'll also make
+it null at the start. We'll use these to interact with the actual elements. Then
+I'll turn this div into a section and give it an ID equal to welcome. Make
+sure to have it exactly as I have it because this will apply some additional styles. Then within it, I will render a
+P tag to which I'll attach this subtitle reference. And within it, we can render
+some kind of text such as, "Hey, I'm Adrian." Or you'll put your name, of course. And then you'll say, "Welcome to
+my" and then in big letters right below within an H1, we'll say portfolio, of
+course. Let's give this H1 a ref as well. This one will be a title ref. And we'll also give it a class name equal to
+margin top of 7 to divide it a bit from the subtitle. Oh, and what I want to do
+here is also add another div below h1. And this div will have a class name
+equal to small dash screen. Within it, I'll render a P tag that'll say this
+portfolio is designed for desktop
+slasht screens only. So if someone visits on a small mobile screen, they
+won't really be able to get all the benefits of these find their windows as this is made for desktop devices. So
+what'll happen is something like this. We'll hide the dock, show the title, and then at the top, we'll say the portfolio
+is designed for desktop and tablets only. When I'm done recording this course at actually making this thing
+fully mobile responsive. If so, that'll be a part of the source code bundle or a
+nice challenge for you to develop. But, okay, let's get back to this nice animated text. This is definitely not
+it, right? We cannot just have an H2 and a P and call it a day. We have to figure
+out the logic of animating the characters. And we'll do that through a special helper function. I'll define it
+right here at the top above the welcome component. And I'll call it render text.
+It'll be equal to an arrow function that accepts a couple of props. First, the
+text we are looking to render, the class names we want to apply to that text, as
+well as the base weight of the text, which by default I'll set to 400. Then
+within it we want to return first we want to spread that text into its
+individual characters. So you can put in an array and say dot dot.ext.
+This is the same as doing text.split. Then you want to map over each
+individual character and get an index for that character. Then we can
+immediately return a span element for each of the characters.
+This span will have a key equal to index or i, a class name which we're passing
+through props. So that'll be equal to class name. And it'll also have an
+additional style. This style will be set to font variation settings. And I'll
+make that into a template string of a string wgt
+as in weight. And I'll set it to base weight like this. We'll nicely space
+those out. And within each one of these spans, we want to render a character. So
+I'll say character. But if the character is just an empty space, then we want to
+render a unicode character for no break space that is backward slash_u0000
+A0 or else we want to render the character itself. So now that we have this render text helper function, we can
+actually use it to render these pieces of text but split them character by character. So I will simply wrap this
+piece of text within this P tag into the render text function. It'll be hey I'm
+Adrian. Welcome to my and then I'll also apply an additional class name of text-3xl
+and font- georama. And finally I'll give it 100 milliseconds for the base weight.
+Make sure to properly close all the strings within it and the function call. Once you do that, it should look like
+this. Render text, three different parameters. First is the text, second
+are the class names, and third is the base weight exactly as we defined above.
+It looks better, but we are still not animating it. That's going to come soon. And now we can do the same thing for the
+portfolio. I'll also wrap this portfolio in a render text. The portfolio will be
+the first parameter. And then we'll provide it a text-9
+Excel class name itallic and font- gorama with a base weight of 400 which
+we don't even have to pass because it is set to 400 by default. Just make sure to properly close it. And there we have it.
+This is already looking so much better. Hey, I'm Adrian. Welcome to my portfolio. Now, let's animate it. First
+things first, we want to create a new function outside of the component called
+setup text hover. So here we're going to deal with whatever happens once we hover
+over the text. It'll accept the container we're hovering over as well as
+the type of text we're hovering over. Then we'll check if there is no container, we'll simply exit the
+function. But if there is something we want to get access to the letters and
+letters are stored within the container dot query selector all and we'll target
+it by the span element because each span is actually a character. Then we want to figure out which styles or weights we
+want to apply to each character when hovered. So I'll define that at the top.
+I'll say font weights. And typically when something is a constant, something that doesn't move,
+you can define it using capital letters with underscores in between. I'll define the subtitle. For subtitle, the min
+weight can be 100. Max can be 400 and default can be 100.
+Whereas for the title, the min will be set to 400. The max will be 900 and
+default again can be 400. So now that we have these font weights, we can use them
+right here by dstructuring them first. So const, min, max, and the default,
+which I'll rename to base. And that'll be coming from font weights for each
+specific type. So if we're on the type of subtitle, then it's going to get
+these ones right here. If it's title, it'll be a bit bolder. Once we have those, we can start animating things. So
+I'll say const animate letters is equal to letter
+weight and duration. These are the three important pieces of animating each
+letter. And it's animating each letter not all of them together. So I'll call it animate letter not letters. And I'll
+make the base duration of 0.25 seconds. Then we can open up a function block and
+immediately return a gap.2 animation. Make sure to import GSAP
+from GSAP right here at the top. And we dive super deep into each one of the GSAP methods within the GSAP course. But
+just know that the GSAP 2 function first accepts the target that we want to animate. And then what do we want to do
+to it? How do we want to animate it? So we're animating each letter individually. And then for each one, we
+want to change the duration set to the base duration we have here. We also want
+to set the easing, how it's going to ease into that animation. We'll use the power two.out.
+And finally, you want to set the font variation settings. And here you want to set the weight to be equal to the
+weight, just like this. And now that we have this animate letter, it's great, but we have to call it somewhere. And
+we're going to call it as we're moving our mouse. So below I'll declare a new function called handle mouse move and
+that'll be equal to event of the mouse move
+and we'll open up a function and we need to get access to the mouse position. Specifically I'll get access to the left
+portion of the container by saying container.get get bounding client rect
+like this and then we can get the mouse position by saying mouse x is equal to
+eventclient x minus left from the container. Now that we know where our
+mouse is and where the letters are, we can just say letters do for each letter
+we want to open up a function block. For each letter we want to get access to its position. So say left and rename it to
+L. And we also want to know its width which I'll rename to W.
+And that's going to be coming from letter.getboundingclient rect. Then we want to get the distance
+of our mouse movement and that's going to be equal to math.apps apps as in
+absolute of the mouse x position minus L
+minus left plus W over two. Bear with me. The last thing we need to get is the
+intensity of which we want to animate it. So I'll say const intensity is equal
+to math.exp as an exponent where we want to get the
+negative value of the distance on the exponent of 2 divided by 2,00. how I got
+to these numbers and don't ask, some AI might have been used in the process, but I was playing a lot and tweaking it and
+it ended up working great. I'll explain it a bit more as soon as we actually put it to action. So, I'll say animate
+letter. Now, we have all the info we need. Which letter we're animating, the weight, which is going to be equal to
+min plus in parenthesis max minus min times the intensity. And you
+can save it. Now to actually turn it on, you can head within the welcome component and use the use gap hook which
+is coming from GAP react. Within it, you can create a callback
+function and have a dependency array defining when this will happen. It'll
+only happen at the start. There we want to call setup text hover and pass the
+titler ref.curren and also setup text hover with a subtitler ref.curren.
+current. And as the second parameter, you have to define what we're animating. So the first one will be the title. So
+I'll call it title. And the second one will be the subtitle. Now we're super
+close to actually animating the text. The only thing we have to do is actually call the handle mouse move function,
+which should be a part of the setup text hover just below the animate letter. So
+if it's not there for you but maybe outside of it, make sure to put it within the setup text hover below the
+animate text letter. Then you can head below the handle mouse move and we can add it as the event listener on the
+container by saying container.adde eventlister mouse move handle mouse
+move. Now if you hover over it, it should actually work. But it looks like the font weight is not getting applied.
+That might be because of how we're setting it. See right here I'm saying wh but
+actually the acronym or the shortened version of weight is wgt
+wait. So we have to fix it here as well as here. And you have to close its
+string sign right here to encapsulate it inside of a string. And if you do that and reload and try hovering over it,
+you'll see that it's actually applying it. But you can take a look that where you exit with the mouse that part will
+still have the bold font applied. So we also have to handle the mouse exit. We can do that easily. Right below the
+handle mouse move, we can also declare a new function const handle mouse leave
+and we'll say letters dot for each letter we want to have an immediate
+return of animate letter and we'll take the letter and simply set it to the base
+weight throughout a period of 0.3 seconds. So if you save that, we also
+need to add an event listener for mouse leave and handle mouse leave. Now
+whenever you're adding event listeners, you also have to remove them. So right
+below I will return a callback function within which I'll say container.ventlister
+for mouse move as well as for mouse leave. And it's never a bad idea to do some cleanup of these event listeners
+and gub functions. So what you can do is you can declare the name for this setup
+text hover by saying const title cleanup
+and we can do the same thing for the subtitle cleanup. And once you declare them right below,
+you can do the same thing as we've done before. Kind of clean up the event listeners by returning a callback
+function that calls the subtitle cleanup as well as the title cleanup right here.
+So now if you reload, you'll see that you can enter and exit. And this is such
+a smooth animation. And you can see that it's even bolder on the bottom part of the portfolio. This is looking
+beautiful. Another thing you can play with is the intensity. So, if I head over right here to the handle mouse move
+where we have the intensity set to divided by 2,000, you can try changing this number and see what happens. If you
+do number like one, you can see that now it'll be very little. Like if you move
+it, it'll only appear on that specific letter. But if you increase it to something like 100,000,
+then it'll actually appear on the whole thing as soon as you hover over it. You want to find a middle ground. In this
+case, I found like 20,000 to work the best. This way, as soon as you start hovering, it hovers a better portion of
+the screen. And this felt the most smooth to me. And with that, you've
+successfully implemented the welcome hero section of your portfolio. But this
+was a lot of code. We installed additional dependencies and we need to make sure that it all works and scales
+properly. For that reason, I'll now push it over to GitHub and open up a PR so we
+can get another set of eyes to check this code for us. Right within our terminal, run git add get commit-m
+implement welcome section and then get push. Since we created a new branch, you'll need to set the upstream to
+combine the current local branch to the remote repository. And once you do that, if you check your
+Mac OS portfolio repo, you'll see that the feat welcome branch had a recent push 19 seconds ago. So, we can compare
+the changes and open up a pull request. We want to merge feed welcome into the
+main branch. So, let's create a pull request to move that code over there. Typically in enterprise level
+applications, none of the code goes directly to main. That's a sin. So
+someone has to review your code first. And if you don't have a senior developer standing by you, looking over your
+shoulder and telling you how you can improve, then we need to find another tool that'll help us write better and
+more quality code. That's Code Rabbit. I'll leave the link down in the description. You can click it and create
+a new account to get a free trial. Yep, just two clicks away from shipping higher quality code. You can get started
+with GitHub. And once you're in, it'll ask you to add your repo. Once you click add repo, you'll have to authenticate
+with your GitHub account and then give it access to either one or all the repos. I selected all so it
+automatically tracks all my code. Once you do that, back within your PR, you should be able to see that now we have a
+new summary created for us by Code Rabbit. We've introduced some new features such as the animated welcome
+section with interactive per character hover effects that respond to mouse movements for enhanced visual
+engagement. And we also updated our project dependencies to support these new animation capabilities. Code Rabbit
+is now processing this PR which may take a couple of minutes. And even though it has no memory of this place, it'll find
+the bugs anyway. So let's give it a minute and I'll be right back. And here
+in the walkthrough, we can read a bit more about exactly what we've done. This is super useful because maybe you're
+working on a team and maybe you were not the one who implemented these features, but you needed to provide a review.
+Having this additional information is crucial and it figured out exactly what
+we're doing. We're implementing a welcome component with per character animated font weight hover effect
+powered by GSAP. I like how it explained exactly what we did in as little words
+as possible. We also added three dependencies and modified the following files. What I love the most about it is
+this sequence diagram. It basically explains exactly how our application is working. User mounts the welcome
+component. Then the use gub hook initializes. We call for the title and subtitle. We attach the mouse over and
+mouse leave listeners to the DOM. And then as the user moves the mouse over the text, the DOM triggers the mouse
+move event. We calculate the distance to each letter. Compute the weight via the exponential intensity. Animate font
+weight for each span. Update the font variation. And finally, as the trigger mouse leaves, we reset all the weights
+to default. This is exactly what we've done, but being able to see it visually is super useful. This saved us about 20
+minutes of time that it would typically take to review this code. And we even got a little poem. What I love about
+them is that they're not just generic. They're talking exactly about what we did. A rabbit hops through hover states
+where letters dance with Jap's grace. Each letter glows animated weight as
+mice move swift through welcome space. A portfolio blooms a warm embrace. I don't
+think I've given it justice, but I love it. You can see we pass some checks. And then after that we get some nitpicky
+comments as well as some additional potential issues. For example, we're not yet using Lucid React. So he's
+suggesting that we can remove it. Then we got another suggestion. This is actually a potential issue and it has
+been ranked as critical. We have to fix this early return to prevent the runtime errors. Here we
+return undefined. But the cleanup code at lines 69 to 70 attempts to call the
+functions title and subtitle cleanup without checking if they're functions.
+This will cause a type error cleanup is not a function runtime error. So instead
+we have to return at least a base function instead of undefined to be able to fix it. Now we immediately get a
+commitable suggestion which is great or a prompt for an AI agent to implement it. But before I fix it, I actually want
+to learn a bit more about why this happened and why this fix is so critical. So I will copy this part from
+code rabbit. I'll actually copy the whole thing including the prompt for AI agent. Head back over to WebStorm and
+then press command shiftp and search for jun. If you haven't yet installed it,
+you can do that. I'll put the link down in the description. I'll paste what I copied over from code rabbit. I'll say
+code rabbit suggested that there's a potential issue
+critical and then right below at the end I'll say tell me more about this issue.
+Does it really pose a problem and fix it for me? It should be able to do that
+because code rabbit provided this nice AI block. I'll leave it on auto as it should be able to figure out where the
+issue is happening within our codebase. So, I'm hoping that this prompt will not only fix the issue, but also tell us a
+bit more about why this issue happened in the first place. And there we go. As you can see, it says a patch was applied
+to update a function so that it returns a no op cleanup function when the container is not available. And then if
+you expand this part, it actually gave us a bit more information on what was the issue. see our setup text hover
+which I'll now find within this welcome right here returned undefined when the container ref was empty here it is
+before we were returning like this and if you don't provide anything after the return statement it means that it is
+undefined but now it fixed it so that we return an empty function so that callers
+can safely invoke it later on during cleanup and it even gave us more information about why can container be
+null how we fixed it and even some info about the extra safety. This is exactly
+what I wanted to get. So now we know that we will never get an error right here. Finally, there's another potential
+minor issue which is fixing a typo in userfacing text. It says this portfolio
+is designed for desktop and tablet screens, but we're supposed to say tablet. This one is easy to fix. Just
+search for tablet in your code and you can fix it. Other than that, we had no
+other issues. So, now that I fixed these ones, I'll actually go ahead and do
+another quick commit by saying get add dot get commit implement code rabbit
+suggestions and get push. It'll automatically recognize that we implemented the changes. It'll verify
+that they indeed got fixed and then you can go ahead and merge the pull request. You can see that even on a singular
+feature such as a welcome section, there were still some things that I missed even though I prepared the codebase to
+be flawless for this course. So, code rabbit saved the day. Now, back within our codebase, I will check out back to
+the main branch and the rungit pool to have all the latest changes. Now, we are
+ready to move to the next feature and that is the dock. The dock alongside the navbar and the hero section will really
+help us sell that Mac operating system illusion right within our portfolio.
+Next up, the dock. Yep, this famous Mac OS dock that as you hover over the
+icons, they slowly pop up and invite you to click them. To get started working on
+the doc, I'll create a new branch by running git checkout dashb and I'll call
+it feat as in feature doc. Then we can get started working on it by creating a
+new component within the components folder and I'll call it doc.jsx.
+Run rafce to quickly spin it up. And then let's also export it from our
+index.js JS so we can easily import it within the app. That is doc right here.
+And then if you head over to our app.jsx, we can now import it directly below the
+welcome coming from components. Perfect. Now, as usual, I'll put my
+browser side by side with my editor so we can see the changes we're making live. And you can see the doc right now
+is just a piece of text that is attached to the top right. But now we have to actually develop it. Let's start by
+turning this div into a section that has an id of doc. Then within it, we can
+render a div to which we'll need to attach a ref. Refs are important to be
+able to target these elements using gap so we can animate them. So in this case,
+I'll define a new ref by using a use ref hook. And we can do that easily by
+saying doc ref is equal to use ref at the start set to null. And then we can
+attach the dock ref to this div. Then I'll give it a class name which we can
+set to doc container. This will automatically put it right
+here at the bottom. That's happening because this doc id provides an absolute positioning with a bottom of five making
+it come right here to the bottom middle within this div. We want to map over the doc icons. So I'll create a new dynamic
+block of code and say doc apps coming from constants. If you want to explore
+this first you can see that the doc apps is nothing more than an array with a couple of different objects. Here we
+have our finder. In this case that is the portfolio. Then we have the Safari which we use for our blog articles. Then
+we have the photos for the photos or the contact section, the terminal and the
+trash. So we want to map over those icons and display them. So I'll say map. We get
+each individual app from which we can dstructure these properties. The ID,
+name, icon, and can open. So just use the object dstructuring sign right here
+which is basically a pair of curly braces and then get all of these properties and then we can immediately
+return a new div for each one of these. Let's make sure to close it properly.
+Give it a key because we're mapping over it. It'll either be an ID if we have it or maybe a name if the ID is not there.
+Although I do believe that every single one has an ID. So that should be good.
+Then we can also give it a class name equal to relative flex and justify
+center. Within it, we'll render a button for each one of these elements because that's what they are. They're little
+buttons situated within the dock that respond to movement. Each one of these buttons will have a type is equal to
+button. It'll also have a class name equal to doc icon. It'll have an area
+label of name. And now you can already start seeing that we already have some space for the dock. If we really want to
+make this accessible for all the different screens, then we also want to give it a data tool tip ID equal to
+doc-ash tooltip. I'll also give it a data-tooltip-content
+which we'll set to name. We're doing this so that once you hover over it, you can actually see what you're clicking
+on. I'll also set the data tool tip delay show to about 150 milliseconds.
+And I'll make it disabled if it's not can open. And finally, don't forget the
+on click. So once we click on each one of these buttons, we want to toggle the app. Whichever one we clicked, we want
+to kind of turn it on. So for that I'll create a new function right here called
+toggle app where we pass the app we want to toggle. Now for now I'll keep this
+toggle app empty and I'll just call it right here when we click on the button
+and I'll pass over the app that we clicked on. That app will actually consist of an ID of the app and whether
+we can or cannot open it. And now most importantly within each one of these
+buttons we need to render an image for its icon. This image will have a source
+of forward slash images forward slash and then the icon. Then
+I'll also give it an al tag of name a loading of lazy as well as a class name
+of whether if it can open I'll give it no class name but if it can't I'll
+reduce the opacity so it seems like it's not really clickable to something like 60. If you save this now you'll see that
+all the icons besides the trash can have the full opacity and they will be
+clickable. Finally, we want to render the React tooltip package. I'll use this
+super well-known React-tooltip mpm package, which has over 1.5 million
+weekly downloads. The only thing we have to do to get it is run mpm install react
+tooltip within our terminal. And then to use it, the only thing we have to do is
+import the tool tip by copying this line right here. Or you can follow along with me. That's going to be import tool tip
+in curly braces from React tooltip. And then you need to provide these properties that we already provided
+right here of what that tool tip will say. Finally, we have to include the tool tip element.
+That'll look like this. Right here at the top of the last closing div, I will
+render the tool tip. Give it an ID of doc-ash tooltip,
+a place of top and a class name equal to tooltip and
+self close it. If you do that and go back, you'll now see that as you hover over it, it says portfolio, articles,
+gallery, contact, skills, and archive. I decided to do it this way because the finder icon in Mac OS means something
+different or like Safari, but within your portfolio, the Finder is actually
+the portfolio. So, we needed to say that so that people have a good user experience using your portfolio. And now
+that we're done with the JSX section, we are ready to actually animate it, which we'll do using Gab. Right here below
+defining the doc ref I'll use the use gub hook with a callback function and
+then within it I will define the doc by making it equal to docref dotc current.
+Then if there is no doc we'll simply exit out of the function because there's nothing to animate. But when we know
+that there is a dock we are ready to get access to all the icons that we want to animate by saying doc.query query
+selector all and we want to get all classes of doc- icon. Once we get them,
+I want to create a function that animates them. So say const animate
+icons and we'll do it based on the mouse x position. So the horizontal position
+of the mouse as it scrolls through the dock. Then within this function, similarly to how we animated the text
+right here in the portfolio, we want to get access to the left position of the dock so we know when it starts. So const
+left is equal to doc.get bounding client rect. Once we have the
+left position, we can say icons do for each icon. we can open up a function
+block and get the start position of the icon. So I'll say left which I'll rename
+to icon left and the full width of the icon and that's going to be coming from
+icon.getboundingclient rect. So this is exactly the same as
+what we've done in the welcome right here. You can check how we have done it. We have first gotten the left position
+of the container of the entire portfolio. So the start right here, same as we're getting the start of the bottom
+dock. And then we're getting the left position and the width of a character.
+So left of a single character and then its width. Left of a character width.
+Same thing here. We're getting the left position of a character or in this case an icon and then its width. So we know
+when we have to move that specific icon. Creating animations is all about
+thinking how to approach it. Once you have the idea, it's easy to implement it. Let me show you. We also want to get
+the center position of the icon in this case. And we can get the center pretty easily by saying icon left minus left of
+the container plus width divided by two. Then we want to get the distance of the
+mouse from the center of the icon. So math.absolute
+mouse x minus the center. And as before, I'll grab that intensity that we had
+right here when we were animating the letters in the welcome section. So, simply copy it and paste it right here.
+And finally, we can animate it by saying gap.2. We're animating the icon. And we want to
+modify its scale, which is one by default, to which we want to add 0.25.
+And then multiply that by the intensity of the mouse movement. We'll also modify its Y position to
+minus15 times the intensity. I'll also do it throughout the duration of 0.2
+seconds. And we'll set the ease of power one out. Now, the only thing remaining
+for us to do is to actually handle the mouse movements. I'll do that right below the animate icons function. So,
+make sure to exit out of it properly and then say const handle mouse move. We're
+accepting the mouse movement event right here. We're getting its left position
+by saying doc.get bounding client rect. And then we'll call the animate icons
+function and pass in the e.clientx which is the current position of the mouse
+minus the left position of the dock. As with the letters, we'll also need to reset the icons once we move out of
+their view. So right below the handle mouse move I will also do const reset
+icons which is going to be a callback function where we can automatically say icons do
+for each icon we want to automatically run gap.2
+and for that icon we want to change the scale back to one. We want to modify
+their y position back to zero throat a duration of 0.3 seconds and with an ease
+of power one.out. That'll look something like this. And now if we put it all together right
+below the reset icons we can say doc.adde eventlister
+of mouse move. We'll call the handle mouse move function and make sure that
+we're in the same function still. We still have to be within the use gub hook. I think I went a bit too far. So I
+need to get back right here. And also doc addeventlister
+mouse leave. We want to call the reset icons. Let's not forget to do the
+cleanup. So I'll say return a callback function where we say doc.ove the move
+event listener of mouse move as well as remove the mouse leave. And we only want
+this to happen at the start. So we'll add an empty dependency array to this use gap hook. And now just before we
+test it out, also make sure to import gsap at the top by saying import gap
+from gap. And if you save that and reload, as you start hovering over them, you can see
+how they jump up and down. But it seems like the intensity is a bit too high because they all seem to be jumping
+together. Whereas in the final application, only one jumps and the other one kind of awaits to jump. To fix
+that, I think we can play with the intensity a bit. I'll try to set the distance to 2.5 because our icon's a bit
+further away than the letters right here in the portfolio. Reload your page. And if you test it out now, you can see that
+only one jumps out exactly as we're hovering over it. This is perfect. It
+almost feels like the dock is done and its visual representation actually is.
+But next we'll have to focus on what happens once we actually click each one of the icons in the dock. And that is
+exactly what we have to do right here as part of the toggle app function. Here
+we'll have to implement the open window logic. We'll do that in the next lesson.
+But for now I'm happy with how this looks. So let's go ahead and commit it. I'll open up the terminal and run git
+add dot g get commit-m implement doc presentation
+and run git push. Of course, we'll have to set the upstream. So you can just copy this
+command and paste it in. Then within your GitHub, you'll see that your feed.pr had recent pushes 3 seconds ago.
+So go ahead and compare it and make a pull request. Once you do that, we'll give Code Rabbit
+about a minute to process our PR. And as I was saying process our PR, it looks
+like the walkthrough was already generated almost instantly. Going over the code rabbit walkthrough, we have
+successfully added React tool tip, created a new DOW component featuring Gabbased hover animations that scale and
+translate icons based on cursor distance. Here is another one of those sequence diagrams that explains exactly
+how it's working. And in this case, it is pretty similar with what we have done with changing the weight of the letters
+on hover within the welcome section. So with that in mind, a doc has arrived
+with icons so fine with GE magic they scale and align. This was a small PR and
+we've done an incredibly amazing job out of it. So no changes are requested, lucky us. But it's still super useful to
+get a nice PR summary. So I'll go ahead and merge it.
+Let's not forget to check out back to the main branch and do a get pull so that our doc appears right here. In the
+next lesson, we'll focus more on the Windows store. This is going to be more about data and logic of opening
+different windows. A lot of exciting learning will be happening there and it'll set the stage for how all the
+windows within our application are opened because if you think about it, we need to create one structure and then
+reuse that structure for all of the projects to actually make the code reusable. So let's dive into that next.
+Now, did you ask yourself of how we'll keep track of which apps are open, where
+they're being displayed, which windows shows up on top of another window, and so on. We'll do that using a state. You
+can think of state as a global data object that just knows what's happening around the app. While you could use
+React context, a lot of people nowadays tend to use just stand as it's a small,
+fast, and scalable barebones state management solution. Don't disregard it because it's cute as it has claws. They
+spent a lot of time fixing the issues so we can very easily install it and use it. Go ahead and run mpm install zestand
+and we can start creating our first store or you can think of this as a global object that I was talking to you
+about. So, we can copy the bare example, although we'll switch it up to work with our use case. And then we can create a
+new folder within the source folder, which I'll call store. Within store,
+create a new file and call it window.js. This store will be all about managing
+our windows. And instead of pasting this, we can write it together line by line. First, we have to import create
+from zastand. And then we're ready to create a store by saying const use
+window store and make it equal to create like this.
+Now what you can do is create a callback function that gets the set functionality
+right here and then returns objects. But if you do it like this, you have to be
+careful not to mutate any data that you pass. First I tried it out and then I ended up having a lot of these spread
+operators because they don't mutate the data. they just spread it out. But that quickly got overwhelming. Then I did
+some more research and I found IMR. Immer is a middleware that lets you perform immutable updates. In order to
+be able to use it, you need to install the EMR library. So you can go ahead and run mpm install and this will let you
+write mutating code in your setters while actually it keeps state immutable
+under the hood. It just provides for so much more readable and cleaner bug less bugprone
+code than manually using the spread operators and so on. So now that we've installed it, let me show you how we're
+going to create the store. To use immer instead of having this immediate set directly within create, you have to call
+immersan middleware and then only within it you get this setter
+that looks something like this. Here we can define all of our store. Within the store, you can have some simple
+variables that just hold the data such as windows where you can define an array
+of all the different windows that you have. I already provided these to you under
+the window config constant. So, if you just import it, you can see that this is an object containing all the different
+window names that we'll have within our application. And we're also setting their default zindex to a th00and. So we
+can then increase it or decrease it depending on which windows we're clicking on. They all start as closed
+with null data. So this is just like setting up the initial window configuration. Then we have to figure
+out which is the next Z index. So we can make that window appear on top of the
+other one. For that we can get the initial Zindex from constants and then simply increase it by one. In this case
+I made a rookie mistake. You can see that it's complaining about this semicolon right here. And that's because
+I'm thinking that I'm in an object because I created it here. But actually, this is a function block. So, it's like
+I'm writing an object that isn't necessarily within an object. Rather, it's just within a function. So, what we
+have to do instead if you want to have this syntax is you have to have automatic returns. So, we have to wrap
+this curly brace in another pair of parenthesis. Only then will this be
+considered as an immediate return like this. And now we can start creating additional functions that we'll use to
+manage our windows. The first one will be called open window. It'll accept the
+window key we're trying to open as well as the data which by default will be set
+to null. Then we can automatically open up the setter for it without a curly
+brace right here. And then we get access to the state where we can open up a function block. I will actually
+duplicate this part right here, the open window for two more functions that we'll use
+later on. One and two. And I will rename them. First is open window. Then we have
+the close window which just needs to know which window to close but doesn't need any data. And finally we need the
+focus window. If we want to bring a window that is already opened on top, this also doesn't require any data. So
+how do we actually implement this logic? Well, first of all, we have to get access to the window and that's going to
+be when is equal to state dot windows and then we get a window under the
+specific window key that we have clicked on. Then since we're within the open window function, we'll set the when that
+is open to be true. We'll also modify the index by saying when.zex
+is equal to state next zindex. And I'll modify the data. So when data
+is equal to data or if new data doesn't exist, we'll make it the same as the data that was already there. And
+finally, we want to increase the next Z index so that when somebody else opens a
+new window, it appears on top of the existing one. Now I will duplicate these four lines
+right here. Window is open, Z-index and data. And I will paste them to the close
+window as well. In this case, we're getting the window that we want to access. Then we're simply setting its is
+open property to false. Finally, we are resetting its zindex to initial zindex.
+And finally, we are setting the data back to null. Oh, but I just noticed
+something and that is that here I said index instead of index. So, make sure to fix this typo right here. Perfect. And
+finally, we have to deal with the focus window. On the focus window, we want to
+again get access to the window itself. And then we're not going to deal with it opening or closing state. Rather, we
+want to update the zindex to make it state. Next zindex.
+And make sure to add the plus+ at the end of it. So we actually increment it by one. Same as what we've done here.
+And there you have it. This is how we'll be managing opening and closing our windows within this application. And if
+you don't mind, I want to show you something. See, my team and I were developing this great application for
+more than a month. We really wanted to give it our best to make it as performant and as intuitive to use and
+as well animated as possible. So I want to give you a bit of a behindthe-scenes look of how the application store looked
+at the start of developing this application. So this is the same file doing more or less the same
+functionality. Check the difference. We are manually keeping track of all of the
+open states. the data and different Z indices are set manually to a thousand.
+Then check this mess. We're not using the immer library. So we have to spread
+all the operators not to mutate the data which is already a mess. We have to spread the current open state and then
+manually update it. And we're duplicating our code so much. Our code for opening and closing different things
+has not been made reusable. Rather, we have a special function for opening the finder, then closing the finder, opening
+the contact, closing the contact, opening resume, closing it, and then doing the same for every single app
+within our application. And even if you ignore all this duplication, you can still see how messy this part is. And
+you can see how descriptive and easy to understand the final code is. So, I just wanted to let you know that this is all
+a process and that as you start to create your projects, the code might look messy, but with a lot of practice
+and effort, you can actually optimize it, shorten it, and make it so much
+easier to understand so that at the end of the day, you come up with a beautiful piece of state like this thing right
+here. But with that in mind, let's actually put this state to use. Don't forget to export the store by saying
+export default use Windows store. And then we can head back over to our doc
+where we were supposed to use it right here. So at the top of this component you can use the state by saying const
+and then dstructuring all the fields you want to get out of it such as the open window close window and all the windows
+that there are coming from use windows store which you have to import coming
+from store windowjs. Then if you scroll down where we have to implement the
+toggle app logic you can now check if an app cannot be opened so can't open app
+then simply return else we can get access to the current window that the user is trying to open by getting access
+to all the windows and then passing the specific app ID and then if window
+is currently open in that case we want to close it. So
+I'll simply call the close window functionality and pass the app ID of the
+window I want to close. Else we want to open it. So in that case I'll call the
+open window and pass the app ID. Finally we can console log all the windows that
+we have access to to see this state in action. I'll now expand this portfolio
+and open up the console on the right. Now, if you toggle one of these apps
+here, you'll be able to see the full state. I just clicked on the finder. So, you can see that the is open state of
+the finder is set to true. The zindex got increased to 1001, whereas the all
+the other ones are still set to 1,00. Then, if I click it again, that will
+turn it off. So, is open state is false and it got returned back to the zindex
+of 1,000. We can also open multiple apps at once. So I just click on all three
+and you can see that now the is open state is true for the Safari as well as
+the photos and we are playing with its Z-index to make them appear on top of the other windows. I know it's a bit
+abstract to try to figure out how the logic works right now by just looking at the console log. So I'll remove it from
+now. And trust me, when you actually see those windows open up and close, when we
+implement that logic, it'll all start to click. Now, just before we commit this code, I want to show you another feature
+from Code Rabbit. Alongside PR reviews, they also recently came up with a CLI
+review. It's right here in the footer. The only thing you have to do to get it is copy this installation. It's
+supported on Mac OS, Linux, and Windows WSL. and paste it in your terminal.
+It'll automatically get Code Rabbit and tell you what you can do with it. You might need to restart your shell or run
+what it says right here and then run code rabbit o login to authenticate.
+Once you're in, you'll get a token which you can paste and you're in. The way it works is you first want to review your
+changes in CLI because it is much faster than getting them in the PRs. That way, the code that you actually commit to
+GitHub is already much cleaner. You get faster PRs, more COD bugs, and faster
+review times. To open it up, you can simply run code rabbit. It'll notice all
+of your modifications. And then you can press enter and then it'll translate engineer steers into feedback or AI will
+pretend that it knows better than you or it'll critique you. I love this part as it's analyzing your code. So, let's give
+it about a minute to calibrate its sarcasm levels, and I'll be right back. It's still reviewing the changes, but it
+already gave us a couple of suggestions. There is one potential issue in the doc
+saying that we need to add a defensive check for missing window. And then if
+you press enter on it, it says the code accesses Windows app ID without verifying the window exists in the
+store, which could cause a runtime error if there's a mismatch between doc apps and the window configuration. You can
+apply a simple diff check right here. If there's no window, then simply render
+the error. Even though for us this isn't crucial because our windows are predefined and aren't going to change,
+if you or some other developers add some additional windows or modify the configuration, the error would indeed
+happen. So this is a nice suggestion and Code Rabbit CLI provides you with a couple of ways to easily fix it. One is
+to just press the letter A, which will automatically apply the suggestion. So now if you head over to the doc and
+check out this part right here, it looks like it tried to add it and it did
+actually add it, but it still left some things at the top and at the bottom
+right here which are not needed because they're already included in this initial block of code. So there we go. Now we
+have this new check that we added. Then if we head over to the store, there are three potential issues. Again, mostly
+validations and defensive checks. So it suggests right here to add a defensive check for the invalid window key.
+You can apply it like this. But let me show you another way of very easily fixing this issue. If you press the
+letter C, this will copy the prompt to fix this with AI. So I just press the
+letter C. I'll spin up Juny to help me. And then I'll paste this prompt. If you
+press enter, there's nothing more that you have to do. It'll take a couple of seconds and the patch will be applied.
+So if you check it right here, it says defensive. If the window key is invalid, do nothing. So if you head over to the
+store, you can now see the change added right here. If you know what it's doing, you can even remove the comment. And
+this would be useful for the open window as well as some validation for the focus window as well. For now, I'll just add
+this check right here at the top. If there is no window, simply exit out of the function. Great. Code Rabbit again
+helped us made our code that much more production ready. And not only that, I
+actually love using it as an educational tool because it teaches us best practices that we would have otherwise
+missed. So now that the doc is done in the next lesson, let me show you how to implement a higher order component, an
+HOC. Yep, we'll be learning about that in this course as well, even though you might have not expected it. will
+implement a higher order component that can be easily reused for all of these different windows because at the end of
+the day they all more or less look pretty similar. So let's do that next.
+In this lesson, we'll implement a higher order component that'll act as a wrapper
+for all of our windows. So back within the code, let's create a new branch by
+running get checkout-b feet window-w
+instead of manually adding this window logic to every component such as making
+it dragable, adding some animations, figuring out the focusing of the window logic, visibility control for each
+window, closing it, and so on. There's so much different pieces of logic that we have to implement for every one of
+these apps. So rather than duplicating the boilerplate code across multiple
+components, we'll create a wrapper kind of reusable component that acts as the
+initial skeleton handling all of these repetitive tasks. And we'll do that
+using something known as a higher order component or an HOC for short. So within
+the source folder, I'll create a new folder called HOC. And within HOC, I'll
+create a new file called window wrapper.jsx
+where you can run AFCE to quickly spin it up. This higher order component is a
+function that'll take a component as input and then it'll return an enhanced
+version of that component. But before returning it, it'll wrap that component with additional logic, props, and
+behaviors without modifying the original component. Now, for our windows to be dragable, we have to use a GSA dragable
+plug-in, which we need to add over to our app to make all of our windows dragable. So, I will simply import
+dragable coming from GAP dragable. And then I'll simply run gap.register plugin
+dragable. And now we can get started with creating this higher order component that will wrap all of our
+windows. Every higher order component needs to accept a new component as an input. And then I'll also pass an
+additional prop of window key. Then within it, we'll define how this new
+wrapped component will look like by saying const wrapped is equal to we will
+accept some props and then define a new component within it. We want to get
+access to the variables and functions from the Windows store. So we can say const dstructure the focus window as
+well as the windows and we can get these by calling use windows store coming from
+store window.js. Then we want to get the window that we're currently opening. So
+I'll dstructure something out of windows and then we'll get into that specific
+window by passing the window key. So for example, if it is windows and then maybe
+finder, we will only return the data for that specific window.
+From it the data that I'm referring to is the is open state and the zindex of
+that window. Then we can also create a new ref that we'll use to manage the animations.
+That'll be equal to use ref coming from react at the start set to null. And
+finally from this wrapped component we will return a new section. That section
+will have an id equal to window key. It'll have a ref equal to ref as well as
+a style equal to zindex. So this will be the reason of why windows are appearing
+over one another when you click or drag them. By implementing these actions, we'll call focus window which will take
+the latest Z-index and apply to the latest window. Of course, that's not working with the current state of our
+application. And that's because back in the app, we forgot to import GSAP right here. So I'll say import GAP from GSAP.
+Now we're back to working state, but we can't yet open up the windows. So let's
+continue creating this window wrapper. I'll also give each window a class name
+equal to absolute. And within it, we want to render the
+component. Now this is the component that we're passing as a prop to the window wrapper. So this can be the
+finder component, the photos, the contact terminal, it can be anything but we're wrapping it with this additional
+windows store logic. I will automatically close it and spread all the props that we later on decide to
+pass into this component. Now just before we return it from this window wrapper, I'll say wrapped
+display name is equal to window wrapper, but I'll make it a template string. So
+window wrapper and then we want to define the display name of that component. So it'll be dynamic component
+display name or component.name
+or if that doesn't exist just component. So that way we're defining which component is this window actually
+wrapping. Finally we can just say return the wrapped component. Now, we'll only be able to figure out how this wrapper
+actually works once we put it to use with one of these apps. So, what do you say that we start
+working on the terminal first? It is this skills section right here. The terminal component will look something
+like this. It looks and feels just like terminal where we're running the show
+text stack command and then we show different web or mobile categories and then the technologies you're proficient
+with within those categories. So let me show you how we can create this component and wrap it with the window
+wrapper. This will be our first window. So let's create a new folder within the
+source folder and let's call it windows. Our first window will be the terminal.
+So I'll create a new file called terminal.jsx and we'll use rafce. Now let's also use
+the same functionality for exporting the components from the components folder. We'll do the same thing for Windows by
+creating a new index.js file, importing the terminal component coming from
+terminal, and then we'll simply export it below so we can more easily imported
+later on. To put it to use, we can head over within our app folder. And right
+below, we'll render this terminal window coming from Windows. Again, no need to
+mention the index.js. And I'll put that right here next to the components. These are local imports and these right here
+are coming from outside and we're registering the plugin right below. So
+now there should be some kind of a text that says terminal right here. So let's dive into it and start implementing it.
+This terminal will be just an empty React fragment within which we'll have a
+div. That div will have an ID equal to window header. And within it, I'll render a P
+tag that says window controls. And I'll render an H2 tag that renders our text
+stack. And now we can see window controls and the text stack. Right below this div, I'll create another div
+that'll have a class name equal to text stack all lowercase. within it a p tag
+and within it a span that'll have a class name equal to font-bold.
+There we can say add adrian or at your name and then a percentage sign. And
+then outside of the span you can say show tech stack. That'll look something
+like this. You can see it right here. But it doesn't appear like it's within a window. So how do we actually make it
+seem like it's within a window? Well, let me show you. Instead of just exporting the terminal which is just
+like a small app within a generic window, we can first wrap it with our higher order component. So what a higher
+order component is again just a component that takes another component as an input and then returns a modified
+version of that component. So you can say const terminal window. So we're taking this terminal and turning it into
+a window. And we're doing that by calling our window wrapper component,
+the one we created not that long ago. And we are passing to it the terminal
+component. How do I know to do that? Because that's the first prop it accepts. And then we also need to pass
+the terminal key. In this case, that is just the word terminal.
+And then instead of exporting the terminal, we're exporting the terminal window from this component. If you do
+that and reload, you'll automatically be able to see that now it actually feels like a window because this window
+wrapper section is applying some additional styles that first of all position it absolutely and make it look
+better, but they're also enabling us to have this focus window is open Z-index
+and all of the other functionalities that we created within the Windows store without having to duplicate any of this
+logic within the terminal component itself or within all the other components to come. we simply have to
+wrap it and we power that component up with all the benefits of the state management and everything else.
+Hopefully this makes sense. If it doesn't, don't worry because it'll start making much more sense as we repeat this
+process for every single component. So now let's continue developing it. I want to create a bit of a space right here
+before the show text stack. And then below this P tag, we'll render a div
+that'll have a class name of label. And within it, a P tag that'll have a class
+name of W of 32 for width. That'll render the text of category. And below
+it, another P tag that'll render the text of technologies. Finally, below
+this div, we'll render another UL. And this UL will have a class name of
+content. And there we can map over the text stack. This text stack is coming from
+our constants. And you can see that I put some technologies and categories that I'm proficient in such as for front
+end, I'm good at React, Nex.js, and TypeScript. for mobile, React Native, and Expo styling, Tailwind, CSS,
+backend, databases, and so on. But I invite you to modify both the categories
+and the items within the categories to match what you're actually good at. This is your portfolio after all. Then we can
+map over them. We're going to dstructure the category and the items from the category and automatically return a list
+item for each one of the categories. That'll look something like this.
+Let's make sure to close it properly. And it looks like I missed one closing parenthesy here. Then within it, I will
+render a check icon coming from Lucid React, giving it a class name of check
+as well as a size of 20. Then below it, I'll render the name of the category. So
+that's going to be just category. And finally, I'll render a UL within this LI, which is fully legal that allow me
+to render the additional items within each category. So, items.m map, we get
+each individual item and its index. And we want to automatically return another
+list item that'll have a key equal to I. It'll render the item itself. And then
+let's make it actually look good by giving this initial LI a class name
+equal to flex. So now they'll appear one after another as well as items center.
+We also need to give it a key equal to category to make it unique.
+If you want to, you can also add commas after each one of these technologies. That's going to be right here next to
+the item. But if you just provide it right here, you'll see that it'll also get added at the end of each line. So
+instead we have to see if I is lower than items.length
+minus one then we provide a comma else we provide nothing. That way it doesn't
+add it for the last one and remove the space so it looks better.
+Finally, below this second ul, this one here, we can render a div that'll have a
+class name equal to footnote. So something at the bottom with a p tag
+where we render the check icon with a size of 20. And we can say five
+of five stacks loaded successfully,
+100%. So, we're kind of simulating how a real terminal would look like. And below
+this P tag, we'll render another P tag that'll have a class name of text black.
+And it'll also have a flag icon from Lucid React with a size of 15 and a fill
+of black. We're going to use that for the render time. So, I'll say render time of 6 milliseconds. Cool. So this is
+our terminal, but we can't yet drag and drop it or close it or even open it for
+that matter. It is there because we just rendered it within the app main. Right, it's there. But now we want to head back
+over to the window wrapper to implement the functionality that actually allow us
+to open, close, focus, or drag and drop this window around. To do that, right
+below this ref, I will use the use gub hook as before. Create a callback
+function and this time I will add one dependency array of is open. That way
+whenever the is open changes, this code will be rerun. We want to get access to
+the current element which is equal to ref.curren. And then if an element doesn't exist or
+if it's not open, we simply want to exit out of this function. We don't care about it. Else, if the element is there,
+we want to change its style display to be set to block. That's because by
+default, all the windows will be turned off. Oh, but how would we actually make that happen? How can we make the windows
+turned off at the start? Well, there is something known as use layout effect
+which is very similar to use effect coming from React, but this one fires
+synchronously after all the DOM mutations. It's typically used to read layout from the DOM and synchronously
+rerendered. You could as well use the regular use effect, but this one is just a bit more fitting for what we're trying
+to do here. We can also get access to the current element if the element
+doesn't exist. So if no L we'll simply return but if it does we'll simply
+change its style display property depending on the is open state. So if is
+open we'll set it to block else we'll set it to none and we'll rerun this
+whenever the is open state changes. Now keep in mind that all of our apps when we initially set them from the window
+config have the is open property set to false. So that means that at the start
+they should all be hidden. And if you reload the app, you'll see that now our terminal window will be hidden. But if
+you click on it and open it, you'll be able to open and close it at will.
+Beautiful. Now I just want to be able to add a quick opening animation so it actually
+seems like we're opening a window. We can do that right here below this L style display. I'll say gap.ro.
+We're animating the element and we're going from a scale of 0.8,
+the opacity of zero, and the Y position of 40. We're going over to a scale of
+one, so we're increasing the size of the window. The opacity to one so we can fully see it. The Y position of zero, as
+well as a duration of 0.4 seconds with an ease of power three dot out. I found
+this one to work the best. Now, since we're using GSAP, don't forget to import GAP at the top by saying import GAP from
+GSAP. And if you reload and click on the terminal, you'll see that it'll slowly
+enlarge, go from the opacity of zero to one, and it'll also go down a bit by
+changing the Y position. So, if you click on it, notice how quick that is. But, we can do it throughout the
+duration of maybe like 5 seconds. So you better see this animation in action. Reload your screen and click on the
+terminal and check this out. So it's changing from opacity, lower scale, and
+a bit of a change Y position to scale one and opacity of one. Of course, you
+want to make it snappy. So something like 0.4 is more than enough. You can even make it snappier by making it like
+0.2. And that way it's barely noticeable, but it is there. Now, maybe the most important part about these
+windows is actually making them dragable. To do that, we'll also use
+GAP. So, I'll open up another use GAP hook with a callback function and this
+time an empty dependency array because they always need to be dragable. I'll get access to the current element and if
+there is no element, we can simply return. Then I want to call dragable.create.
+So we're creating a dragable effect on this specific element and also on press.
+So once we click it, I want to call a callback function that will focus that
+window. So focus window with the following window key like this. So now
+make sure to import dragable and this one will be coming from GAP dragable.
+And then as you open up the window, you can now actually drag and drop it on the screen. Pretty cool, right? It can also
+go outside of the screen. So, at this point, we didn't really need this on press. We could have just made the
+element dragable and it would have worked, but we're adding this for later on. Once we have multiple windows
+opened, as soon as you start dragging one, the focus window will actually make
+it jump to the top by increasing its Zindex. Pretty simple yet pretty smart,
+right? And then in order to make our app efficient, we have to kill the instance of this dragable functionality. So I'll
+say const dstructure the instance and then here you can say return a callback
+function that says instance.kill. That way we're not keeping track of all of these different dragable windows.
+Rather we're just keeping track of the one that we clicked on. Pretty cool, right? So with this in mind, we not only
+implemented the window wrapper and the corresponding animations such as the animation to open it up. We also
+implemented the dragging functionality using GAP. We've also hidden all the
+windows at the start so that you have to click on them to open them. And we're doing all of that only once in our
+entire codebase because we're wrapping all the elements that are using that functionalities within a higher order
+component. Take a look at this terminal. It has no idea what's happening. It simply renders
+the code. The rest is happening right here where we're wrapping it, giving it
+all that additional context so it knows how it needs to behave. Oh, and just to finish it off, notice how we have these
+Windows control right here. Those should be those three dots that are common to every window. Since it's the same
+reusable UI, we'll create a new component for this. So head over to the components folder
+and create a new component called window controls.jsx,
+use rafce to quickly spin it up. And then we can import it within our I think
+we're using it in the terminal. Yep, right here. Window controls. So instead of this, we can simply call the window
+control component. Oh, but let's make sure to export it first. and actually call it
+properly. I have a double L right here. So, window controls and I will export it properly from the
+components folder. Window controls and we can export it.
+Then we are importing it here. I want to close it properly and give it a target set to terminal. So specifically this
+instance of the window controls component takes in a prop that will know that it belongs on the terminal
+component but for example this one will be portfolio gallery and so on. So let's
+get into it and start developing it. It'll be pretty simple as you know it accepts a prop of target telling it
+which windows should it be interacting with. within it we can automatically
+very easily get access to the close window functionality which is coming
+from the use windows store. So once again the logic of messing with those
+windows is completely separated from the rest of the components. Components don't
+need to care about that. They're simply calling these different hooks and getting the data out of them. And then
+the only thing it has to do is actually render a window, a div that has an ID
+set to window controls.
+Make sure to put a dash in between. We'll render a first div. It'll be a
+self-closing div with a class name of close. And on click, it'll simply call
+the close window functionality. And we also have two more windows. one will be
+for minimizing it. So I'll give it a class name of minimize
+and the other one will be for maximizing the windows. I didn't go ahead and implement these functionalities but you
+can definitely do that as an additional exercise. There we go. So now at the top you can see these three dots and only
+the first one is clickable and it should close the window. It'll only do that if you properly call it here. See on this
+on click how we're calling it right now. We're not calling the function. We're actually passing the full function
+declaration into it. Instead, you want to make a callback function and then call it like this. And you need to pass
+in the target. And to make it reusable, the target is coming right through the props. So now if I reload and try to
+close it, you can see that it works. This component has no idea what's happening. The terminal component has no
+idea what's happening, but yet it all works together thanks to our higher order component called Windows control
+and thanks to our store which manages all the logic. Trust me, getting to this
+point wasn't easy. It took a lot of refactoring and additional planning to make it this pretty and to make it this
+functional so that at the end of the day, I can give you the best code possible. If you like these lessons that
+we just went through, such as the Windows Store or higher order components and all the little tips I covered along
+the way, you'll love what we do on jsmastery.com. I recently dropped the complete testing
+course if you want to learn how to test the real apps. Of course, there's always our flagship ultimate next.js course
+which we're keeping up to date with every single new version. And there's this GAP course that I was telling you
+about that'll teach you how to approach animations completely differently. You can get all of these as individual
+courses or scroll down and join as a JS Mastery Pro member where you'll get all
+those courses and so much more. And I'm looking forward to seeing you within the dashboard where you can track your
+progress and maybe even beat me and others on lesson progression where we recently added this nice gamification
+feature so you can level up and learn at the same time. I'll leave the link down in the description. Go ahead and check
+it out. But with that in mind, let's go ahead and push our latest code because we've done such a great work in this
+last lesson. So I'll run git add dot git commit-m and
+say implement a higher order component for managing window states and add the
+first window terminal and get push. We'll have to set the
+upstream and in about a second our code should be right here on GitHub where
+we'll be able to open up its pull request. So, let's do that next as soon as Code Rabbit provides us with a
+review. In this PR, we've introduced a window management system using GAP for
+drag interactions, a new window wrapper higher order component that manages
+window state, animations, and dragable behavior. The window control component
+provides control buttons and a terminal component displays the text stack information within the window framework.
+So overall, we got this new window management hawk that wraps components
+and makes them dragable, animated, and handles all the state for them. And then
+we implemented our first window of the day, the terminal for displaying our text stack. This is pretty cool. Within
+our app, we render the terminal. Then we wrap the terminal with the window wrapper, which then gets the windows
+state such as the is open and z indices. And then we can interact with it. And with that in mind, windows are dragging
+around the screen with gub magic smooth and keen. Okay, I'll promise I'll stop
+from here on. Let's go ahead and merge this PR and check out back to the main
+branch and run get pull to pull all the latest changes. Next, we'll focus on the
+Safari component, the browser part of our application, which we'll use to open up your blog posts if you've written
+any. If not, that might be a strong nudge to write some technical education.
+But if you don't really feel like doing that, don't worry because we'll find some other use case for it.
+Let's do that next. Let's dive right into our next feature
+and that is our Safari browser which in this case is acting as your developer
+blog where you can list your blog posts and then open them up within a new tab
+directly where you're posting your blogs. So let's do this next. Back within your code, you can head over to
+source windows and create a second window. This time it'll be a Safari
+browser.js. So just Safari JSX is fine. You can run
+rafce to quickly spin it up. And then you can export it out of your index.js.
+That's going to be Safari. And don't forget to export it here,
+which will allow you to very easily import it within your app.jsx
+right below the terminal. So I will render Safari, import from Windows, and
+render it right here. So head over into it and we can start implementing it. I'll start by wrapping
+everything into an empty React fragment and then within it we'll have a div. This div will have an id equal to window
+dash header. And then here we can render our window controls that we coded out in
+the last lesson coming from components. That'll look something like this. Now,
+keep in mind if you don't wrap it within our window wrapper, then it'll take the full width of the container, our entire
+Mac OS system. But instead of that, we actually want to wrap it within a window
+wrapper. And we can do that in the same way we've done it last time. const Safari window is equal to window
+wrapper. And then you pass in the actual Safari component and then give it a name
+or the window key in this case which is just Safari. And then instead of exporting Safari, we'll be exporting the
+Safari window. If you do it like that and reload now, if you click on it, you
+can see that you can actually open it and you can start drag and dropping it. It doesn't yet look good, but it will
+soon. Hopefully, as we continue developing each one of these new windows, you'll get a better
+understanding of this window wrapper component and just how important it is for everything to work seamlessly
+without us having to duplicate the code. In this case, we'll pass it a prop of target set to Safari. So, it knows that
+once we click close, it closes the Safari window and not, for example, the skills window. Right below the window
+controls, we can render an icon called panel left and this is coming from Lucid
+React. You can give it a class name of margin left of 10 and then icon. This
+will simply render this panel icon right here, which won't be functional, but we can definitely add some functionalities
+if you want to later on. Then I'll create another div that'll have a class
+name of flex items center gap of one in
+between the items and a margin left of five. And here I'll render the chevron
+left coming from Lucid React. It'll have a class name of icon. And then right
+below it we also want to render the chevron right icon also coming from
+Lucid React. This will give us back and forward icons. We can also continue
+creating this header below this div by creating another div that'll have a
+class name set to flex-1 flex- center and a gap of three. Within
+it, we can render the icon called shield half. This is to let us know that Safari
+is protecting our browsing. And it'll also have a class name of icon. Here you
+have it. We can then create another div below the shield directly.
+This one will have a class name set to search. And within it, we can render the
+search icon coming from Lucid React with a class name set to icon. And below it,
+I'll render an input which we can use as an actual search that has a type set to
+text. It has a placeholder set to search or enter website name. And I'll give it
+a class name of flex-1 so it expands as far and wide as it needs to. Then to
+finish it off, we can head two divs down. And we can create another div with
+a class name set to flex items-c center and a gap of five. And here we can
+render three more icons. The share icon in case we want to share this current website with a class name of icon. And
+we can duplicate it two more times. For the second one, we're going to render the plus icon.
+and the third one will be a copy icon. All coming from Lucid React. All this
+together will give us this nice browser Safari like view where you have the URL bar in the middle and you have some
+additional icons on left and right. Of course, if you want to add additional functionalities, you can totally do
+that. Now, we're going to head two divs down and I'll create another div with a
+class name set to blog. within it, I'll render an H2 that'll say
+my developer blog or you can say something like my thoughts or whatever you want to say here. And then we'll
+create another div with a class name of space-y
+within which we can map over our blog posts. Now, right now blog posts are coming
+from constants and you can see here that I have three. Each one of the blog posts
+has its ID, a date when you wrote it, a title, an image, and a link pointing to
+a real website. This can be a platform for posting blogs such as Medium or Dev.2. If you haven't written any blogs
+yet, I would highly advise you to write them. You don't have to be an expert on the field to be able to write something.
+Just share your learnings or findings or share how you built this portfolio, how you modified it, how you added
+additional features, whatever it is, document it, write a bit about it in a technical way and share it somewhere.
+It'll help position you as an expert. If you don't have blogs, these could be any kind of cards that have a date, title,
+image, and a link. So, you can use this for showcasing other things as well. Once you have them, feel free to say
+map. And then we can extract all the details from that post such as ID,
+image, title, date, and the link. And we can automatically return a div
+for each one of these blocks. Each div will have a key set to id and a
+class name set to blog post. Within it, we can render another div that'll have a
+class name set to call-pan-2. So, it spans over two columns. And
+within it, we'll render an image that has a source of image and an al tag of
+title. If you save that, you should be able to see three icons. These are icons coming from my blog posts, but you can
+change them to match yours directly within blog posts. These can be actual images which you can upload to the
+images folder and then simply refer to them here. Now alongside the image below this div, we also want to render another
+div for the content. So give it a class name of content and then within it
+render a p tag rendering the date. Also render an h3 for the title and finally
+we can also render an anchor tag which is going to be the actual link. So I'll
+give it an href pointing to the link that we defined in our constants. I'll give it a target of underscore blank. So
+it opens up in a new screen. And when you use underscore blank, you also need to add re no opener and no refer. And
+within it, you can say something along the lines of check out the full post.
+And you can add an icon move right coming from Lucid React with a class
+name set to icon dash hover.
+So if you save it, it'll look something like this. You now have this icon and you can click on it to open up your blog
+post wherever you're writing it. If you don't know, I've started writing a lot
+of different blog posts directly within jsmastery.com. So head over there, create an account,
+and you'll be able to see them somewhere within your dashboard. But with that in mind, believe it or not, we are done
+with the Safari component. It was so much easier to make it now that it's
+simply reusing the functionality from our window wrapper. It's actually dragable. You can close it and you can
+open it by clicking the articles icon. Amazing. And of course, the more blog
+posts you have, the longer the window will be. So, feel free to add your best ones right here. This has been a short
+and sweet section, yet super useful if you want to showcase your expertise through technical writing. Oh, and a
+huge part right here is that now you can open two windows at the same time to show you how they stack. Take a look at
+how to the sides right here, this window has a bit of a shadow. So, as you drag it on top of another window, it really
+seems like it's floating on top of it. It's like a 3D effect, right? You can move one around. You can move the second
+around. You can open them or close them. And best of all is you can also focus
+them. See, if I place one on top of another and then click on it, it's going to show on top. We're doing this with
+the window wrapper that's using the window store that calls that focus window function to increase its zindex
+by one and to make it appear on top. Pretty ingenious, right? So with that finished, we're ready to move over to
+our next window. In this lesson, we'll focus on a very
+important portfolio functionality, and that is the ability to view and download your resume. So head over to your
+portfolio. Later on, we'll focus on the work section, but for now, we can deal with this ré section right here, where
+you can upload your resume. And once they click it, they'll be able to see all of the details about you. and
+they'll also be able to download that resumeé directly to their device. So to get started with implementing it, you
+can create a new window within the Windows folder and I'll call it ré.jsx
+and you can run rafce. Once it's there, as usual, you can export it from the
+windows right here. So that's going to be ré and then add it to the export as
+well. doesn't take that much time once you get used to it. Later on, as you saw, we'll be opening it from our
+Finder, from the portfolio. But for now, to be able to test it out, let's just quickly add it to the navigation bar.
+I'll head over to the navbar, and right here at the top, we want to get the open window functionality. So, const open
+window, and it's coming from use Windows Store. Then right here within our nav
+links which are now not doing anything and you can see they're also hyperl to different sections such as the contact
+the portfolio and one of them is also a quick link to the resume. So we want to
+be able to open it up. To do that the only thing you have to do is add an onclick property to this LI where we're
+going to call the open window and pass the specific type of the window that we
+want to open. This type is coming right here dstructured from the nav links. And of course that's going to say ré. So as
+you click on it, we are hoping for the ré window to open up. So let's focus on
+developing it so we can actually see something on the screen. First things first, this is also a window. So I'll
+say const ré window is equal to window wrapper.
+and we'll pass in the résé component as well as the window key of résé. And then
+we can simply export the ré window. This will now allow it to view it in a window
+format. Then as usual, I'll wrap this into an empty react fragment and within
+it I'll create a new div that'll have an id set to window header. Right within
+the window header, we will render the window controls. And this time, the target will be set to resume so we can
+properly close that window. Of course, for the window to actually be able to appear on the homepage, we also have to
+render it directly within our app. So, right below the Safari, you can render the resume window or in this case, just
+the resume coming from Windows. And if you head back, you'll be able to see a little window right now, which you can
+close or open by clicking on this ré hyperlink at the top.
+Let's add some more stuff within it. Right below Windows control, we can add an H2 that'll say something like ré.pdf.
+We can also render an anchor tag that'll have an href pointing to the link to
+your resume. So, it's going to be files ré.pdf for me. So, if you head over to your
+public files, you'll have to upload your resume right here and name it properly
+for you to be able to click it right here and download it. Alongside the href, we can also make this a
+downloadable href. Give it a class name of cursor-pointer
+so people know they can download it and a title of download
+resume. And then within it, I'll render the download icon coming from Lucid React with a class name set to icon.
+So now it looks something like this. And then right below it, we want to render the actual document. And for that we'll
+use a library called React PDF. React PDF is super famous MPM library that has
+almost 2 million weekly downloads. I mean, just imagine creating a library that 2 million people use on a weekly
+basis. And the only thing you have to do to set it up is run mpmi react- pdf.
+Then if you head over to its mpm page and scroll down, you'll be able to see
+that we also have to import a worker. This will allow us to render that PDF. So let's copy this part and place it on
+the top of our resume component like this. Alongside that, we'll also have to import a couple of CSS files.
+If you search for CSS on the page, you'll be able to see the import for annotations or links in PDFs. This is
+annotation layer. So, right on top of the worker, you can add an import for the annotation layer as well as for the
+text layer. This is needed for this library to work well. And then let's see how we can use
+it. You have to wrap everything in a document and then you have a page within
+it. So I will simply copy this part right here and paste it below our
+current div. We have a document. The file we'll download is actually stored
+under files ré.pdf. In this case we don't need this on load
+success. For the page we'll render the page number one. We'll make it say
+render the text layer and render the annotation layer. This is needed for it
+to look as good as possible and to be able to render all the links and different texts.
+If you haven't already, make sure to actually import the document
+and the page as well as the PDF.js from React PDF. Once you do that and click
+resume, you'll see that it'll actually open it up. You can close it, you can
+open it, and it is there. Hopefully, you have uploaded your resume to your codebase and you can see it right here
+within your Mac operating system portfolio. And if we go full screen, it looks even better because now you have
+your portfolio right here. Recruiters will soon be able to pull up all of your contact information, maybe the skills
+and the blog posts on the side while playing with this letters. And the best part is that they can also immediately
+download your resume in case they need to feed it to Chad GPT to review it or something like that. Jokes aside, they
+won't have to do this for your portfolio and your resume. Oh, and crafting a proper resume that actually goes through
+all of the automatic bots and checking systems is pretty tough. I've heard stories where people send their resumes
+to over 300 different companies and most are just bought out of rejections
+because you haven't added enough quality keywords for the bot to consider you worthy.
+That's stupid. So alongside building this portfolio, we also created something known as the developer career
+accelerator, which is a part of the bundle you can get with this portfolio kit. There we dive super deep into
+crafting your resume and cover letter. There are modules on first figuring out your focus for what kind of
+opportunities you want to rank. Then there's market research and a module about crafting your perfect developer
+resume alongside with examples, best practices, and resumes you can clone and
+make your own. There's also more stuff about LinkedIn optimization, GitHub, readme, and cover letters, as well as
+job learning strategies. So, click the link down in the description to get this as part of the bundle with the portfolio
+starter kit. And with that in mind, let's continue developing the other windows of our portfolio.
+In this lesson, we'll focus on implementing the finder component. Yep, this beast of a cluster of different
+windows that allows you to switch between your work, the about me section, resume, even trash, as well as showcase
+all of your projects. But before we dive into the UI of this component, we'll
+have to implement some logic. Yep, we'll create a second store of data. And
+specifically, it'll track our finder location. In other words, it'll manage
+the current directory or folder context within the finder window. So it'll track
+the location such as work, about me, resume or any other project folders
+maintaining the state which represents the folder currently being viewed. The store will hold metadata about the
+folder structure itself and what folder you're looking at, not whatever the window is open or where it's positioned
+on the screen. So that means that it is separate from our use Windows store
+which means that I'll create another file within the store folder and I'll call it location.js.
+This will be a great recap of learning how zestand and global state management
+work. So first things first, we'll create a new use location store
+and I'll make that equal to create coming from zustand within which we can
+pass the immer call which is coming from zustand middleware and then it gets access to a state creator function where
+we get access to the set function and then we can just automatically return an object of our state.
+That's a lot of parenthesis, but if you understand what's happening, that's good. Within here, you can just define
+different properties such as the current active location, which at the start, we can set to the default location, which
+is going to be equal to locations coming from constants.work.
+Now, this locations look like this. It is nothing more than a simple object specifying the data about different
+locations. It can be work, about, resume, and trash. And it looks something like this. Each one of these
+locations has an ID, a type, a name, icon, kind, which is the folder in this
+case, and then children, such as in this work folder, we have a couple of projects. And each one of these will
+have additional information, such as a Nike e-commerce application, its icon,
+its kind, position, and where we're going to display it. as well as it can also have its own children. This will
+start making more sense as we see it on the screen. And yes, you'll be able to modify every single part of your
+portfolio. So, right here at the top, I will define this as a default location.
+Since it's a constant, I'm using capital letters. And I'll set it to locations.work. And then we can set the
+active location to the default location right here. Then I'll create a function called set
+active location which will take in a location. By default it can be set to
+null and it'll call the set function where we get access to the state and we
+modify the state.active location to be equal to the new location that we're
+setting it to. Pretty straightforward, right? Then we also want to have a reset
+active location function that's not going to accept any props. It'll also call the setter and it'll set the active
+location back to the default location. And that's it. This store was much
+simpler than the other one. So I will now export default location store. And
+you might wonder, was it really necessary to separate the Windows store from the location store? Well, the use
+window store manages the window concerns, whether windows are opened, closed, their z-index, position, and
+animation states. It controls the application's windows life cycle, and visual layering on the desktop. In
+contrast, the location store manages content state, the hierarchical
+navigation within Finder. These represent two fundamentally different domains.
+They're different concerns. As I said, Windows Store is all about figuring out
+is this window open and which window is on top while the location store handles
+what folder am I currently viewing. These two concerns shouldn't be tightly coupled. Another reason why I decided to
+separate them is that the location context such as which property we clicked on needs to persist across
+window operations. So when you close or reopen the finder window, I still want
+to remain on the last position we were on. And that's another reason why having them separate is good. Another reason
+why it's good to separate them is that the location store will be used by some other components in the future. For
+example, you might want to pin one of these project folders on home screen or your about me section. And finally, it's
+great for scalability because if you later need to add the breadcrumb navigation, search filtering, or
+location history, having a dedicated store makes this cleaner. The Windows Store stays focused on window management
+without being polluted with the navigation logic. That's it for the use location store. In the next lesson,
+we'll use it within our new most powerful window of the app, the finder.
+To get started creating the finder, go ahead and create a new window within the Windows folder and call it finder.jsx.
+You can run rafce and very quickly import it and export it
+within your index. I'll simply rename this to finder and then export it right
+here at the bottom. Then we can import it directly within the app.jsx JSX.
+Right below the resume, I'll simply say Finder and import it from Windows.
+Now, you'll be able to see a little Finder thingy right here. So, let's develop it. Right within it, I'll start
+by wrapping everything in an empty React fragment as what we've done so far.
+Then, within it, I'll render a div that'll have an ID set to the window header. within it. I think you already
+know we'll have window controls coming from components and then we'll also give
+it a target set to finder. So we know that we're closing the finder if we
+click on the close button. I'll also render a search icon right here coming
+from Lucid React with a class name of icon.
+That'll look something like this. But of course we want to wrap it into a window
+wrapper. So right here at the bottom I will say const finder window is equal to
+window wrapper. We will wrap the finder component and
+choose a key for our window and then we'll simply export the finder window.
+So once we use it within the app once you click on the portfolio it'll open up a new window which soon enough will act
+as the finder. Right below this div for the window header, we'll create another div. This one will have a class name of
+bg white flex and h- full. Right within it, I'll render another div with a class
+name set to sidebar. And within the sidebar, another div within which we'll
+have an h3 that'll say favorites. And below it, a ul within which we have to
+render a list of all of our favorites. I will also duplicate this div right here.
+But the second time it'll not say favorites, rather it'll say work.
+So this is what we're trying to replicate. We want to have some links for our favorites and then the work
+which is going to be our portfolio. So right within this first UL, what you can do is run object dov values. So we can
+extract only the values out of the locations coming from constants. That's going to be just work location, about
+location, resume location, trash location, and so on. Then you want to map over them. So say map, you get each
+item. And then for each one, you want to automatically return a list item.
+That list item will have a key equal to item. ID. It'll have an on click where
+we can set the active location. that set active location is coming from the location store. So right here you can
+say const dstructure the active location as well as the set active location and
+this will be coming from use location store. Then within this on click you can
+simply define a callback function and then call the set active location by
+passing in the item which in this case is the location. Then within it, you can render an image that'll have a source of
+item icon with a class name of W-4
+and an alt of item.name. And then below the image, we'll render a P tag with a
+class name of text-sm font-medium and truncate. Finally, I'll render the
+item.name within it. And now you can see work, about me, resume, trash, and so
+on. Now, we also have to figure out which one of these is currently active.
+And we can do that by adding an additional class name to this LI. To be able to add dynamic class names using
+Tailwind, there's a neat little package called CLSX. So, what you can do is open up your
+terminal and run MPMI CLSX like this class names.
+And then right here within the class name instead of making it a regular string
+you can open up curly braces call the clsx library which you have to import
+from clsx and then you can define when you want to apply which class. In this
+case, if the item do ID is triple equal to the current active location ID, then
+we want to apply a class of active. Else we'll apply not active. If I save this,
+this will be better. Oh, but it looks like I apply this class name to the image instead of the LI. So, I'll
+provide it to the LI right here. And now, if you open it up, you can see that work is currently turned on. And you can
+switch between different locations. And now we can do basically the same thing for the work section right here for the
+projects. Go ahead and copy this entire UL and paste it right below. Only this
+time instead of mapping over our locations, we'll be mapping over the children of those locations. And that'll
+look like this. Locations.work.children. So these are our projects. And that'll
+look something like this. Now, this is a lot of repetitive code. We just duplicated it. And to really see
+what's duplicated, you can expand it right here. And you can see that this entire part besides the value that we're
+mapping over is basically duplicated from the start of the map to the end of the map. That means that we want to
+extract that part above. So, I will copy the map part all the way to the end and
+remove it from here. Then right at the top of the return, we'll say const render list and it'll
+take in an array of items and it'll automatically return those items and
+then dot we can paste the map that we had. So it'll simply map over them whichever items we pass as a prop and
+it'll render this. Now why is this useful? Because now right here where we
+said object values locations, you can simply pass that as a prop that
+will map over and display all of that render list. But make sure to properly
+close it. It ends with two parenthesis. Once you do that, you'll see that we'll
+basically have the same thing, which is good. But we can take it a step further and also remove this part right here.
+The only thing we care about is the actual data that we'll pass over to our render list
+just like this. So, as you can see, the final product looks exactly the same as before. We can click between different
+things, but now the actual JSX part of the code is significantly cleaner and
+makes so much more sense. As a matter of fact, I'm noticing now that this part is also the same, including the UL. So if
+you really want to take it a step further and in this case I'll show you how we do that is you can copy the rest
+of the part. So the div and the h3 we will return it right here. So I will put
+an immediate return div h3. This will be actually the name of the
+list. So I'll say name. So here you want to render the name of the list.
+Then we want to open up a dynamic part. wrap this in a ul because we're starting
+with a list. End the ul right here after the map. So I will properly close it. ul
+and then I have to close the div. Hopefully I'm doing it right. And then close the parenthesy. If we save this,
+it's looking good. And now you can just call the render list two times. The
+first parameter is going to be the name. So in this case, favorites. And then the second parameter is the value. In this
+case, the first parameter is going to be work and then the value. And now you can
+delete everything else because this right here renders the list. And you end
+up with a code that looks like this. You're simply rendering two different lists. Everything else is right here.
+You can even collapse that if you want to. And the final JSX looks like this. And what we've done here is nothing more
+than regular JavaScript and some React tricks. I think we cover a lot of that fundamental JavaScript stuff within the
+complete path to JavaScript mastery course on JSMy Pro. So if you haven't already, you can become a member and we
+go in-depth about arrays, objects, tricky concept, and clean code best practices. But actually in every single
+one of these courses, especially Ultimate Next.js, GS. I try to follow the best practices of proper
+productionready code and I love keeping it clean like what we've done right here. Now to show the actual content, we
+can head below these two divs and create another UL.
+This time it'll have a class name of content and we'll map over the active
+location. Okay, so this is the location we're currently on. dot children dot map
+where we get individual item and then for each item we want to automatically
+return an LI with a key set to item do
+ID a class name set to item.position position and on click we want to open
+that item. So we can simply say open item and pass in the item we want to
+open. This open item is a special function which I'll create right here. Open item. It'll accept the item we want
+to open and then we'll implement some logic soon enough. But before we're actually opening it, let's finish how it
+should look like within the list item. The only thing we need to show is an image with a source set to item doicon
+as well as an al tag of item.name. And then below the image, we can render
+a p tag that will render the item.name. But it looks like I put this ul in the
+wrong place. It should actually be within this div next to our sidebar, not
+beneath it. So now if you go to work, you should be able to see three different projects. If you go to about
+me, you should be able to see some PGs. Resume should show your resume and trash
+should show some trash. As well as when you click on your work, you'll be able to see the important information such as
+the text documents, the actual website, a PNG, or even a Figma design of the
+projects you've developed. You can think of this as your projects section. So you
+can even rename it to my projects or my apps. But how do we actually open these
+items right now? I mean the resume at least should be simple because we already implemented the resume feature,
+right? So how do we open it? Well, the open item is going to be the function that determines that. So I will head
+over into the open item function and say
+if item file type is triple equal to PDF
+that's easy then we can just return open window. This of course is coming from
+our window state management. So we can say const dstructure the use window hook
+and it's coming from use window store and we'll open the window that's called
+resume. We've already done that before.
+Oh, it's supposed to say open window not use window. And if you do that properly once you click on it now you can open up
+your resume directly from your ré tab within your finder. Okay, that's good.
+But what about opening folders? We can see the folders of your work right here. That's also easy. The only thing you
+have to say is if item dot kind is triple equal to folder, in that case
+return set active location and set it to the item that we're currently clicking
+on. So now if you click on Nike e-commerce, you can see that it'll open
+it up right here. If you click on another app that you've built, it'll open up that one. Okay. But what's the
+state with this nike.com link, which is going to be the link to your deployed application or maybe the Figma file for
+it. For that, we can just open it up in a new window. So, I'll say if
+an array of fig or URL includes
+the item.file file type and if that item has an href in that
+case we can return window.open item.href
+and we'll open it up in a blank page like this. So now if you click on
+nike.com you can see that for me it opens up the Nike YouTube video. If I
+click on Figma it opens up Google because I didn't yet add that link. But
+you get the idea. For example, the AI ré analyzer will open up that YouTube video. So this would be a good point in
+time where you would go through this additional data in the location store
+where we have the locations and then we have your work location. This is the
+most important part where we have project one, project two and project
+three. You can even add more if you want to go over those projects, modify the
+names, modify the images, modify the children of those projects and the descriptions so this portfolio truly
+becomes yours and you display your work and your past projects. Once you're done
+with that, we can continue. We have to also create different viewers for text
+and image files. So right here below if it's not either one of these three types
+then we just want to open up a regular window that'll accept a window key of a template string item file type
+item.ind and we'll pass in the data for that item. If you try clicking on it
+nothing will happen because we haven't yet implemented an image viewer or a text viewer. Since we are recreating
+this as a complete operating system, we have to code out the ability to preview
+or open up an image or a text file. So, let's do that next.
+Okay, you can now browse your projects, but can you actually read more details
+about them? What they're all about? And can you maybe see a photo of the design
+or of the finished application? That's what we're going to build next. a text file viewer as well as an image viewer.
+Starting with text, this window will allow you to render any text file. You simply need to call the window and pass
+the correct data. To start working on it, this time I want to do something a bit different. Instead of us coding this
+new window from scratch, I want to give Juny a shot and see if it can oneshot
+this entire feature by understanding our current codebase, figuring out how windows typically work, and then
+implementing this text viewer. So, open up Juny and let's write a precise
+prompt. Build a simple text file window.
+Create text.jsx JSX inside Windows folder.
+Use window wrapper and Windows store. For sure, we'll need that, right? The
+window ID is txt file. How do I know that? Because if you head over to the
+Windows store and then you go over to window config, you'll see that for the
+text file, the key right here is txt file. Then we can say read Windows.txt
+filed data and render its name optional
+image optional subtitle and an array
+of description paragraphs because if you think about it what text
+is is basically a collection of paragraphs. If no data just return
+null. Then as usual wrap the component with
+window wrapper as we've done with other windows.
+Then export it from Windows index.js and import it in app.jsx.
+I should be able to open any text file from Finder and see this window display
+its content. I think this is good enough. Feel free to pause and type it out if you want on your own. Or once
+it's done, you can actually code it out on your own. That's totally okay. Maybe you can take the time and try to see if
+it can be faster than Juny while implementing this feature. It'll now get the structure of windowjs, get the
+structure of index.js. GS and other files that it thinks might be relevant for this task and it'll update us on the
+task progress. It seems like it's already understanding what it needs to do. It identified the Windows store. Now
+it needs to locate the window config. Once it does that, it went into the finder to figure out how that works.
+Then it's searching for the window wrapper. It's opening up all the windows so it understands how we're typically
+wrapping them with a window. There we go. Confirmed wrapper approach across windows. ready to implement text window
+and wire it up. Preparing to wire text window by ensuring controls and there we go. It started editing. It created a new
+file called text.jsx implementing a text window component with dynamic content rendering. It
+exported it and then it imported it within app.jsx. And there we go. That's
+it. So let's go ahead and check it out together. Right here we have a new component called text.jsx.
+For consistency, I can rename it to use a capital letter T at the start. And then we can start going through it
+together. So, it's importing the window wrapper and properly wrapping it right
+here while giving it the key of txt file. That's good. Then, it's getting
+access to the Windows from the Windows Store and the data coming from
+Windows.ext filed data. If there's no data, it returns null.
+Otherwise, it destructures all the properties from the data, including the name, image, subtitle, and description.
+It nicely renders the window header and applies a target. So, we can close it.
+Renders the name of this window. Then, within this div, it checks whether an image exists and if it does, it renders
+it. So, let's see if that actually works. Oh, but first, let me see if it actually exported it properly. Looks
+like it did. text coming from text and then whether it imported it within the app. And looks like it did that
+correctly, too. So, the only thing that's remaining to check is to see whether it actually works. I'll head
+over to a Nike project and click on this txt. And would you look at that? It actually
+did it. We have this text right here, Nike e-commerce. It renders it properly. And this is coming from the information
+about that specific project. So, if you modified it, you should be able to see something else. Some of these, I think,
+also have images. Not the projects, but if you head over to about me section,
+there's the about me txt where I included an image. So, if you've never seen my face, hi, I'm Adrian. And here
+you can see that we're also rendering an image within the text file, as well as some emojis. It's looking good to me. If
+something's not working perfectly for you, you can just pause this video, check what's maybe different for you,
+fix it up, and then you'll also have your text reader within your Mac OS portfolio. Pretty cool that Jun was able
+to do it so quickly. Now, the second type of a file is an image. Right now, we cannot open up this PNG right here.
+So, feel free to pause this video and try to implement the image viewer on your own. What I'll do is give Juny
+another shot. I'll just continue the conversation right here and just tell it to create an
+image file window just like the text window. It should render the title and
+the image coming from image URL and press enter. Now, this challenge is
+significantly harder for Juny because I gave it less information to work with. So, let's see how well it does. Oh, this
+was super quick. It looks like it already edited the image.jsx file. So,
+while it's continuing to do the rest, let's go ahead and check it out. Here it is. It looks like it exported it and
+imported it within the app exactly as I asked. And there we go. It looks like it's done. Our image looks like this. It
+once again renders the window header with the name of the file. Then it renders the image right here and wraps
+it within a window wrapper. So, back within our application, if you try to open up a file, it actually does it.
+This is amazing. You can now head over to the about me section and let's check it out. Oh, this was me on the
+conference. Or we can check out some additional designs right here for this
+Nike website we've done not that long ago on YouTube. Maybe this food delivery
+app as well. And what do we have in the trash? It looks like a hero section of a
+typical boring portfolio. I guess that's why it's in the trash because what you have here is something much much better.
+You can open up different images, different kinds of files, check out your work. And I mean, as we're continuing to
+build this, it's becoming such a nice and powerful portfolio application. We're getting close to the end, but I
+think we're missing something. I'll tell you what that is in the next lesson, but for now, great job on coming this far
+into the course. Having a great portfolio is amazing. And
+once recruiters and potential employers see what you've built with all of these different windows, they're going to ask,
+"Hey, how can I actually reach out to you? Where's the contact info?" Thankfully for that, we have this
+hyperlink right here at the top as well as the contact section at the bottom. So, let's go ahead and implement the
+contact section window. To implement it, you can head over to your Windows and create a new file called contact.jsx.
+You can run rafce right here. And I love how we're calling these windows and not
+just sections of the page. Then we can export it within this index right here.
+That'll be called a contact. And finally export it and import it
+within the app.jsx JSX so we can actually show it on the screen. Head over into it and we can get started
+implementing it. As usual, we'll wrap it in an empty React fragment within which
+we're going to have a div that'll act as you know it, a window header. So I'll
+give it an ID of window header and within it an H2 that'll say contact me.
+We must wrap it in a window wrapper. So say const contact window is equal to
+window wrapper and pass in the contact component as well as the window key and
+then simply export default contact window. Then you can open it up. So to
+implement it right below this div create another div that'll have a class name of
+padding of five and the space y of five as well to create some spacing.
+Within it, you can display an image of source and you'll have to find it in
+your images folder. In this case, I have an image of me. It's Adrien.jpeg.
+This is the image from the GitHub stars walk of fame at the GitHub Universe conference in San Francisco. I'll also
+give it an al tag of Adrien. You can put, of course, your name right here and
+a class name of W20 and rounded- full to make this appear like a little avatar.
+Then below it, I'll render an H3 that'll say something along the lines of let's connect.
+Below it, a P tag of got an idea, a bug to squash, or just want to talk tech.
+I'm in. You can write something like that or what works for you.
+Then right below it, render a UL within it map over your socials. These socials
+are coming from constants of course so we can keep things separated. And the only thing you have to replace here are
+the links. Currently these links are pointing to my platforms Twitter and LinkedIn profiles. You want to modify
+these to suit your social profiles. say socials.map where you get each
+individual social profile that has an ID a bg a link an icon and a text and we
+can automatically return an li for each one of these with a key set to ID a
+style set to background color of bg and
+then within it render an anchor tag within anchor tag Add an image that has
+a source of icon, an alt of text, and a
+class name of size-5. And below the image, render a P tag that
+renders the text. This will give you the cards of GitHub, platform, Twitter, and LinkedIn. Of
+course, you can modify all of these and point to your other profiles if you want to. And to actually make them clickable,
+give an href of link to this anchor tag. Give it a target of underscore blank so
+it opens up on new screen. When you give it a blank, you also have to give it a re of no opener, no referral. And give
+it a title of text. So now if you click on GitHub, it'll
+lead you to my GitHub profile. Same thing for the platform which leads you to jmmastery.com. And then there's
+Twitter and LinkedIn. Oh, looks like I forgot to add the buttons to close the window. That is the window controls
+coming from components. Index is not necessary. So, we can
+remove it. And we can close it and give it a target of contact.
+There we go. That's better. And that's it. Now, it's very easy to contact you.
+There's a link at the top or there's this contact section right here at the bottom. So, while they're browsing your
+portfolio, if they want to quickly contact you, they can just click right here and do it right away. What would be
+useful is also adding another P tag to just drop in your email, jsmastery.pro.
+That way, if they want to, they can quickly send you an email. This one was super quick, but that's because we've
+already built such great fundamentals from the window wrappers, window controls, and proper constants. That
+makes all of this super simple because we're reusing our app's primary functionalities. That's how real
+development is supposed to look like. As you build your app, it should get easier, not harder. But it's been some
+time since we've reviewed our code. Yes, we've had a couple of easier components, but that doesn't mean that a couple of
+errors didn't snuck through. So, what we'll do is we'll just call Code Rabbit to check it out. The only thing you have
+to do is type Code Rabbit in your terminal. It'll recognize all the changes we've done, which is really a
+lot. And you can press enter so that we awaken the code review demons. This
+might take some time because there's so many changes, but as soon as it analyzes the first couple of files, it'll give
+them to us so we can start checking out the review. And it looks like the review is in. And there's one potential issue.
+Risky default parameters could lead to a null state. Setting location to null as
+the default parameter means that calling set active location without arguments will set active location to null. This
+could break components that expect a valid location object. For example, finder on line 57 uses active location.
+And it gives us a couple of approaches. First, if there's no location, we can just return or require the parameter
+explicitly. I love how it found this and it actually referred to the part of the code where this is specifically going to
+break if something goes wrong. So, I'll use this prompt to fix it with AI by pressing the letter C, opening up Juny,
+and pasting it right here. That should fix it for me without me even having to worry about where it is in the code. Of
+course, it's always great to know what's actually happening. But thankfully, for that reason, you get a diff so you can
+see what happens. We are removing the location null, which means that now we're requiring an explicit argument,
+ignoring the undefined calls. And here we're adding a line where we say if location is undefined then return. This
+is great. And I'll go ahead and do a push by running get add dot getit
+commit-m implement many features and get push.
+Perfect. Not much more left to go, but I hope you're excited as I am to finish up
+this portfolio. Okay, we're almost at the end of this
+course, but our desktop looks pretty empty. Sure, we have this top bar right
+here. We have a nice hero animated text, and we have a dock that opens up all
+sorts of different windows, but there's nothing on the desktop. So, let's add some folders. The most important
+folders, of course, being our work projects. So, we'll put shortcuts to them directly on our desktop. It's no
+different than what we did inside the Finder. You'll follow the same steps by rendering these project folders at
+different locations on the desktop. And then when you click on it, it'll open up the window with the specified location.
+See, this is exactly why we had to create that use location store because whenever someone clicks on any of these
+folders, we'll call the store and set the location to be that directory and
+then open the finder window. So go ahead and create a new component file. This is
+not really a window. It's just a component. That'll be called home.jsx.
+You can run rafce very easily. Import and export it within our index.js.
+That'll be called home and home right here. And then back within the app, you can
+now just add it at the bottom. home
+coming from components. So head over into it and let me show you
+how we can implement it. First things first, I'll turn this div into a section that'll have an ID set to home. Then
+within it, I'll create a new unordered list within which we want to map over
+our projects. But what are those projects and where are they coming from? Well, they're simply different locations
+within our Finder. So right here at the top I will say const projects is equal
+to locations coming from constants dot work question mark. And if that doesn't
+exist we'll simply render an empty array just so our app doesn't break.
+Then we can map over the projects by saying projects.m map where we get each individual project. And for each one we
+render a list item that has a key equal to
+project ID. And within it we'll render an image with a source set to forward/im
+images/folder.png. So we'll use the folder image for all of
+these different icons. Now you can see one folder appear right here, but it's not yet dragable. And I also want to
+render a P tag that'll render the project name. So now you can see they all appear one on top of another. What
+we want to do next is give this image an alt tag so it doesn't complain. So alt
+will be set to project.name. And then we have to give this li a class name to
+properly position it on the screen. We'll use clsx to apply dynamic class
+names. And I'll give it class name of group as well as folder. We'll use this
+word folder to target it with gap and make it dragable. But before we do that,
+as the second parameter to clsx, I'll say project window position. This will change the
+default position of the window. Where did that come from? Well, if you head over to locations.work.children
+children and then see one of these projects. You'll see that it has a window position and you can play with
+it. Instead of top 15 VH, you can set that to top 30VH or maybe top 50 VH or
+you can change the right position to maybe right 30 or right 100 or 1,000. Or
+you can just leave it at the positions that I set it. I set it so that it appears that they're randomly positioned
+on the screen. And the last thing we have to do is to make them dragable. So just use the use g sub hook define a
+callback function with an empty dependency array and just say dragable
+dotcreate and then say folder which means that our folder class name will become dragable
+but for this to work make sure to import dragable coming from gap dragable. And
+now you can move them around and it feels so seamless and smooth. You can
+see they even stack one on top of another so it behaves like a real operating system. This is amazing. I'll
+store them right here at the top. And finally, we have to be able to open them. Of course, you know that that's
+super simple because we've already implemented the use windows store. So I'll say const
+and the structure the open window functionality coming from use windows store. So now what we can do is once we
+click on it we can create a new function called handle open project finder where
+we'll pass in the project and then simply open up the window.
+So open window and then pass in the project. Of course we'll have to call this handle project open window as an on
+click to the li. So on click handle open project finder and pass in the project.
+So now if you click on it nothing will happen yet. That's because we first have to set the location of the window.
+Thankfully our other store helps with that. So we'll simply dstructure the set
+active location coming from use location store.
+And then alongside opening the window or rather before opening it, we want to set active location to the project. And what
+we want to open is actually the finder window that will then display that location. So now if we click on it, you
+can see it opens the Nike e-commerce or maybe the food delivery app or the AI ré
+analyzer. This is perfect and works like a charm. It just adds another layer to a
+portfolio where you can now hover over the hero, but you can also interact with the folders and open them up, which kind
+of invites you to start exploring the rest of the portfolio and finally contact you to give you a job. So, great
+job on implementing the homepage folders. And I mean, just look at how far you've already come. starting from a
+simple navigation bar to building a smooth text animation and a Mac OS style
+dock, dragable windows, and so much more to showcase your portfolio content.
+You've learned a lot so far, but it only truly sticks when you practice it yourself because real learning happens
+when you get hands-on, not when you just copy and paste from a tutorial. So pause for a moment, review what you've built,
+go through the codebase and try to truly understand how the use window store works, how the use location store works,
+and most importantly, how the window wrapper higher order component works.
+These are some tricky concept which you need to fully understand. If needed, ask Juny. Juny can help you fully understand
+different parts of your code. Simply ask what you want to know if you need additional info. Once you make sure that
+you fully understand the entirety of the codebase, I prepared a little challenge for you and that is to implement the
+last window of the day, the gallery. Not every portfolio really needs a gallery,
+but if you want to display some of your projects or some images, you can definitely do that right here. It's
+simply a list of photos where clicking on one opens it up in a new photo window
+which we already built. It's pretty straightforward, familiar, and totally within your skills. So, if you want to
+add this within your portfolio, go ahead and give it a shot. I'm sure you already know that you most likely have to create
+another window within the window folder. And you can call it photos.jsx.
+You'll then need to export it right here by saying import photos coming from
+Windows and then exporting it right here. And then you can import it within the app. Right here above the home, you
+can add the photos. And the photos component itself will look something like this. You already know that it
+starts with a window header. We'll use the open window functionality from the Windows Store. And then we're simply
+mapping over the photo links, which display these icons on the left. And finally, mapping over the gallery, which
+uses the open window functionality to open up each one of these images exactly as I've showed right here. So if you
+want to implement it, feel free to pause the screen and code it out. The only thing that's remaining is to deploy this
+portfolio to the internet so that your friends, potential employers, and clients can check it out and be amazed
+with what you've done. To do that, you can head back over to your codebase. If you've been using GitHub, you can push
+all the latest changes by running git addit commit-m
+finalize portfolio and get push. Once that is done, simply run mpm run
+build, which will create an optimized production build of your application, and it'll give it to you right here
+within your folder. You can just rightclick it and open it in Finder or File Explorer. Once you open it there,
+you'll see a folder called this. Now, you can head back over to your project on Hostinger, go to the dashboard of the
+selected project, and head over to the file manager. Right here it says do not upload here. So don't do that. Rather
+head over into the public HTML. Delete the default PHP. Head over into the disc
+folder and drag and drop everything from it to the public HTML. We have a couple of
+assets. So it might take about a minute. But once it's there, you can head back over to your project and click on the
+domain name you've chosen. And just like that, your portfolio is right here.
+same as what you had on your local machine, but this time in just a couple of clicks, deployed on the internet and
+live for everybody to check out. Now, the world will be able to browse your projects, check out your resume. Or
+wait, no, it looks like it failed to load it. So, let's go ahead and quickly
+fix that. Back within the code, you can head over to your resume file.
+And here we're importing some workers. The issue is happening right now because
+React PDF requires the PDFJS worker to be downloaded by the browser locally. We
+just import the URL and it works. But on the deployed version, Node modules is
+not publicly served. So it's not going to work. So to fix it, we have to modify our worker config. We'll say PDFJS
+global worker options.Worker source is equal to. And now we'll craft
+a new URL to a publicly accessible worker. It'll be a template string of
+https col/ slash unpackaged.com.
+And here we can find that worker. This is a fast CDN that allows you to find anything. You just have to know what
+you're looking for. In this case, we're looking for a forward slash pdfjs-dist
+at. And now we have to define the PDFJS version. So I'll say pdfjs.ver/build/pdf.worker.mmin
+minified.mjs. Now it should be able to find the worker even in production and make it work. Go
+ahead and rerun mpm run build. Open up the folder in finder one more time. And
+back within Hostinger's public html, simply drag and drop all these new files
+to override the current code. Once it's done, you can head back over to your portfolio and reload. Then let's go to
+the Finder. And now everybody will be able to view and download your
+portfolio. Yep, now it works like a charm. Great job. And yeah, here we are.
+If you're still here, first of all, congratulations. You've already done something 99% of developers never do.
+You build a real animated interactive system from scratch. And that's a skill
+most juniors never show, even if they technically know React. So, here's the
+thing. Now that you can build something this polished, the next question is, can
+you present yourself in a way that actually gets you noticed? Because the truth is, you don't have a skills
+problem. Most developers don't. They have a presentation problem. Recruiters
+see hundreds of similar portfolios, same stack, same projects, same vibe. What
+makes you stand out isn't just the code. It's how your work feels, how it moves
+and looks. That's why alongside building this Mac OS portfolio and making it your
+own, I want you to focus on the strategy side of things. not just the quotes, but
+rather how to position yourself, build a standout GitHub and LinkedIn, write a
+resume that gets replies, and prepare for real interviews. And that's exactly
+what I teach inside the Dev Career Accelerator. It's not for beginners, but
+it's for developers like you who already build cool things and just need the right guidance to actually land that
+first or next role. I'll review your portfolio, resume, GitHub, LinkedIn,
+everything. So, you're not just guessing your way through the job search. But
+whether you pick up anything or not, I just want to leave you with this. You're capable of building far more than you
+think. You proved it in this project. So, take what you've learned here and go
+build something the internet won't forget. I'll see you in the next one.
+
+All
+
+From JavaScript Mastery
+
+JavaScript
+
+AI
+
+Learning
+
+Related
+
+For you
+
+
+
